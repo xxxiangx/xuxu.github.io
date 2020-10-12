@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.nav{
+				height: 60px;
+			}
+			.nav li{
+				float: left;
+				list-style: none;
+				width: 100px;
+				border: 1px solid red;
+			}
+			.nav-li{
+				position: relative;
+			}
+			.nav-ul{
+				display: none;
+			}
+			.nav-li:hover .nav-ul{
+				position: absolute;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nav">
+			<ul>
+				<li>首页</li>
+				<li class="nav-li">社区
+					<ul class="nav-ul">
+						<li>游戏开发社区</li>
+						<li>游戏策划社区</li>
+						<li>游戏美术社区</li>
+						<li>VR社区</li>
+					</ul>
+				</li>
+				<li>课堂</li>
+				<li>项目</li>
+			</ul>
+		</div>
+		<div class="banner">
+			<img src="img/pic.png"/>
+		</div>
+	</body>
+</html>

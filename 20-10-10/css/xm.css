@@ -1,0 +1,54 @@
+@charset "utf-8";
+body{
+	min-width: 1230px;
+}
+/*顶部导航*/
+.top-nav{
+	background-color: #333333;
+	height: 40px;
+}
+.top-nav-l-li,.top-nav-r2-li{
+	float: left;
+	line-height: 40px;
+	color: #ACACA2;
+}
+.top-nav-l-a,.top-nav-r2-a{
+	float: left;
+	display: block;
+	color: #ACACA2;
+}
+.top-nav-l-a,.top-nav-l-span,.top-nav-r2-li,.top-nav-r2-a{
+	margin-right: 5px;
+}
+.top-nav-l-span,.top-nav-r2-span{
+	color: #3D3D3D;
+}
+.top-nav-r1{
+
+	margin-left: 20px;
+	background-color: #424242;
+	padding-left: 14px;
+}
+
+.top-nav-r1-a{
+	display: block;
+	background: url(../img/car.png) no-repeat left center;
+	color: #ACACA2;
+	width: 84px;
+	line-height: 40px;
+	padding-left: 22px;
+}
+/*标题导航栏*/
+.nav{
+	padding: 20px 0;
+}
+.nav-li{
+	float: left;
+}
+.nav-h1{
+	display: block;
+	width: 55px;
+	height: 55px;
+	background: url(../img/logo.png) no-repeat;
+	text-indent: -9999px;
+}

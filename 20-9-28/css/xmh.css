@@ -1,0 +1,137 @@
+body{
+	background: url(../images/bg.png);
+}
+/*头部*/
+.head{
+	float: left;
+}
+.nav-ul{
+	overflow: hidden;
+}
+.nav-li{
+	float: left;
+	margin: 0 67px;
+	line-height: 141px;
+}
+/*广告*/
+.banner-p{
+	width: 100%;
+}
+/*品牌优势*/
+.adv{
+	margin-top: 24px;
+	background-color: #d8e59f;
+}
+.title{
+	text-align: center;
+	padding-top: 32px;
+}
+.title-p{
+	font-size: 12px;
+}
+.adv-b{
+	overflow: hidden;
+	margin-top: 20px;
+	text-align: center;
+	padding-bottom: 60px;
+}
+.adv-ul{
+	overflow: hidden;
+}
+.adv-li{
+	float: left;
+	width: 20%;
+}
+.adv-h5{
+	margin-top: 24px;
+	font-size: 16px;
+	font-weight: normal;
+}
+.adv-p{
+	font-size: 14px;
+}
+/*加盟要求*/
+.join{
+	padding-top: 22px;
+}
+.join-b{
+	background: url(../images/join_24.png) no-repeat right bottom;
+	overflow: hidden;
+}
+.con{
+	float: left;
+}
+.con-l{
+	margin-top: 20px;
+	float: left;
+}
+.con-r{
+	float: left;
+	padding: 84px 0 0 38px;
+}
+.con-r-h3{
+	margin-bottom: 8px;
+	font-size: 20px;
+	font-weight: normal;
+}
+.con-r-p{
+	line-height: 20px;
+	font-size: 14px;
+}
+/*联系我们*/
+.contect{
+	padding: 50px 0 50px;
+}
+.us{
+	overflow: hidden;
+	text-align: center;
+}
+.us-li{
+	width: 296px;
+	float: left;
+	background-color: #809a50;
+	padding: 34px 0 20px;
+	margin: 22px 2px 0;
+}
+.us-pic{
+	margin-bottom: 16px;
+}
+.us-p{
+	line-height: 24px;
+	color: #2d2e28;
+}
+/*底部*/
+.foot{
+	padding: 28px 0 24px;
+	background-color: #547121;
+	overflow: hidden;
+	color: #fff;
+}
+.foot-l{
+	float: left;
+}
+.foot-l-1{
+	line-height: 46px;
+}
+.foot-l-a{
+	color: #fff;
+	margin-right: 10px;
+}
+.foot-l-2{
+	line-height: 20px;
+	font-size: 12px;
+}
+.foot-l-i{
+	margin: 0 12px;
+}
+.copy{
+	line-height: 48px;
+	font-size: 12px;
+}
+.foot-r{
+	float: right;
+	text-align: center;
+}
+.foot-p{
+	font-size:14px;
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.wrap span{
+				font-weight: bold;
+			}
+			/*hover鼠标悬停*/
+			.wrap{
+				width: 640px;
+				height: 370px;
+				color: #fff;
+				margin: 0 auto;
+				background: url(img/4.jpg) no-repeat 0 -30px;
+				position: relative;
+				transition: all .4s linear ;
+			}
+			.mask{
+				width: inherit;
+				height: inherit;
+				background-color: #18a367;
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transition: all .4s linear ;
+			}
+			.wrap-h2{
+				font-size: 28px;
+				font-weight: normal;
+				position: absolute;
+				top: 120px;
+				left: 230px;
+				transition: all .4s linear ;
+			}
+			.wrap-p{
+				opacity: 0;
+				font-size: 14px;
+				position: absolute;
+				top: 200px;
+				left: 120px;
+				transition: all .4s linear ;
+			}
+			.wrap:hover{
+				background: url(img/4.jpg) no-repeat 0 0;
+			}
+			.wrap:hover .mask{
+				opacity: .3;
+			}
+			.wrap:hover .wrap-h2{
+				top: 150px;
+			}
+			.wrap:hover .wrap-p{
+				opacity: 1;
+			}
+			/*上下*/
+			.line1,.line3{
+				height: 1px;
+				width: 40px;
+				background-color: #fff;
+				position: absolute;
+				left: 320px;
+				transition: all .4s linear ;
+				opacity: 0;
+			}
+			.wrap:hover .line1,.wrap:hover .line3{
+				width: 560px;
+				left: 40px;
+				opacity: 1;
+			}
+			.line1{
+				top: 40px;
+			}
+			.line3{
+				bottom: 40px;
+			}
+			/*左右*/
+			.line2,.line4{
+				width: 1px;
+				height: 40px;
+				background-color: #fff;
+				position: absolute;
+				opacity: 0;
+				top: 185px;
+			}
+			.wrap:hover .line2,.wrap:hover .line4{
+				transition: all .4s linear ;
+				height: 340px;
+				top: 20px;
+				opacity: 1;
+			}
+			.line2{
+				left: 60px;
+			}
+			.line4{
+				right: 60px;
+			}
+			
+			/*幽灵按钮*/
+			.wrap2{
+				width: 900px;
+				height: 280px;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+			.shop1{
+				width: 300px;
+				float: left;
+			}
+			.icon1{
+				width: 156px;
+				height: 156px;
+				margin:  0 auto;
+			}
+			.icon1 img{
+				transition: all 2s linear ;
+			}
+			.btn1{
+				width: 160px;
+				line-height: 40px;
+				margin:  0 auto;
+				color: red;
+				font-weight: bold;
+				padding-left: 16px;
+				border: 1px solid #999999;
+				background: url(img/ddd.png) no-repeat 90% center;
+				position: relative;
+			}
+			.icon1:hover img{
+				transform: rotate(360deg);
+			}
+			.btn-line1,.btn-line2,.btn-line3,.btn-line4{
+				background-color: #f00;
+			}
+			/*上下*/
+			.btn-line1,.btn-line2{
+				width: 0;
+				height: 2px;
+				position: absolute;
+				opacity: 0;
+
+			}
+			.btn1:hover .btn-line1,.btn1:hover .btn-line2{
+				width: 180px;
+				left: -2px;
+				transition: all .5s linear ;
+				opacity: 1;
+			}
+			.btn-line1{
+				left: -50px;
+				top: -2px;
+			}
+			.btn-line2{
+				top: 39px;
+				left: 210px;
+			}
+			/*左右*/
+			.btn-line3,.btn-line4{
+				width: 2px;
+				height: 0;
+				position: absolute;
+				opacity: 0;
+			}
+			.btn1:hover .btn-line3,.btn1:hover .btn-line4{
+				height: 42px;
+				transition: all .5s linear ;
+				top: -2px;
+				opacity: 1;
+			}
+			.btn-line3{
+				left: -2px;
+				top: -50px;
+			}
+			.btn-line4{
+				right: -2px;
+				top: 90px;
+			}
+			
+			/*折扇效果*/
+			.wrap3{
+				width: 600px;
+				height: 300px;
+				margin: 0 auto;
+				border-bottom: 2px solid #000;
+				margin-bottom: 100px;
+				position: relative;
+			}
+			.boxl-7,.boxl-6,.boxl-5,.boxl-4,.boxl-3,.boxl-2,.box1,.boxr-2,.boxr-3,.boxr-4,.boxr-5,.boxr-6,.boxr-7{
+				width: 60px;
+				height: 200px;
+				position: absolute;
+				bottom: 30px;
+				left: 270px;
+			}
+			.boxl-7,.boxr-7{
+				background-color: #81007F;
+				transition: all .5s linear ;
+				opacity: 0;
+			}
+			.boxl-6,.boxr-6{
+				background-color: #00FFFF;
+				transition: all .5s linear ;
+				opacity: 0;
+			}
+			.boxl-5,.boxr-5{
+				background-color: #0000FE;
+				transition: all .5s linear ;
+				opacity: 0;
+			}
+			.boxl-4,.boxr-4{
+				background-color: #008001;
+				transition: all .5s linear ;
+				opacity: 0;
+			}
+			.boxl-3,.boxr-3{
+				background-color: #FFFF00;
+				transition: all .5s linear ;
+				opacity: 0;
+			}
+			.boxl-2,.boxr-2{
+				background-color: #FEA500;
+				transition: all .5s linear ;
+				opacity: 0;
+			}
+			.box1{
+				background-color: #FE0000;
+			}
+			.wrap3 div{
+				transform-origin: 30px 200px;
+			}
+			.wrap3:hover .boxl-2{
+				transform: rotate(-15deg);
+				opacity: 1;
+			}
+			.wrap3:hover .boxl-3{
+				transform: rotate(-30deg);
+				opacity: 1;
+			}
+			.wrap3:hover .boxl-4{
+				transform: rotate(-45deg);
+				opacity: 1;
+			}
+			.wrap3:hover .boxl-5{
+				transform: rotate(-60deg);
+				opacity: 1;
+			}
+			.wrap3:hover .boxl-6{
+				transform: rotate(-75deg);
+				opacity: 1;
+			}
+			.wrap3:hover .boxl-7{
+				transform: rotate(-90deg);
+				opacity: 1;
+			}
+			.wrap3:hover .boxr-2{
+				transform: rotate(15deg);
+				opacity: 1;
+			}
+			.wrap3:hover .boxr-3{
+				transform: rotate(30deg);
+				opacity: 1;
+			}
+			.wrap3:hover .boxr-4{
+				transform: rotate(45deg);
+				opacity: 1;
+			}
+			.wrap3:hover .boxr-5{
+				transform: rotate(60deg);
+				opacity: 1;
+			}
+			.wrap3:hover .boxr-6{
+				transform: rotate(75deg);
+				opacity: 1;
+			}
+			.wrap3:hover .boxr-7{
+				transform: rotate(90deg);
+				opacity: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<!--hover鼠标悬停-->
+		<div class="wrap">
+			<div class="mask"></div>
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+			<div class="line4"></div>
+			<h2 class="wrap-h2">CRAZY <span>LAYLA</span></h2>
+			<p class="wrap-p">When Layla appears, she brings an eternal summer along.</p>
+		</div>
+		<!--幽灵按钮-->
+		<div class="wrap2">
+			<div class="shop1">
+				<div class="icon1">
+					<img src="img/10.png"/>
+				</div>
+				<div class="btn1">
+					MISSON
+					<div class="btn-line1"></div>
+					<div class="btn-line2"></div>
+					<div class="btn-line3"></div>
+					<div class="btn-line4"></div>
+				</div>
+			</div>
+			<div class="shop1">
+				<div class="icon1">
+					<img src="img/12.png"/>
+				</div>
+				<div class="btn1">
+					PLAY
+					<div class="btn-line1"></div>
+					<div class="btn-line2"></div>
+					<div class="btn-line3"></div>
+					<div class="btn-line4"></div>
+				</div>
+			</div>
+			<div class="shop1">
+				<div class="icon1">
+					<img src="img/18.png"/>
+				</div>
+				<div class="btn1">
+					TOUCH
+					<div class="btn-line1"></div>
+					<div class="btn-line2"></div>
+					<div class="btn-line3"></div>
+					<div class="btn-line4"></div>
+				</div>
+			</div>
+		</div>
+		<!--折扇效果-->
+		<div class="wrap3">
+			<div class="boxl-7">7</div>
+			<div class="boxl-6">6</div>
+			<div class="boxl-5">5</div>
+			<div class="boxl-4">4</div>
+			<div class="boxl-3">3</div>
+			<div class="boxl-2">2</div>
+			<div class="box1">1</div>
+			<div class="boxr-2">2</div>
+			<div class="boxr-3">3</div>
+			<div class="boxr-4">4</div>
+			<div class="boxr-5">5</div>
+			<div class="boxr-6">6</div>
+			<div class="boxr-7">7</div>
+		</div>
+	</body>
+</html>

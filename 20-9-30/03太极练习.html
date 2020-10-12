@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-color: cornflowerblue;
+			}
+			.circle{
+				width: 200px;
+				height: 400px;
+				background: #000;
+				border-right: 200px solid #fff;
+				border-radius: 50%;
+				margin: 100px auto;
+				position: relative;
+			}
+			.big-b,.big-w{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				position: relative;
+			}
+			.small-b,.small-w{
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				position: relative;
+			}
+			.small-b{
+				background-color: #000;
+				position: absolute;
+				left:100px;
+			}
+			.small-w{
+				background-color: #fff;
+				position: absolute;
+				left:100px;
+				top:100px;
+			}
+			.center-w,.center-b{
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				position: absolute;
+				left: 50px;
+				top: 60px;
+			}
+			.center-w{
+				background-color: #fff;
+			}
+			.center-b{
+				background-color: #000;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="circle">
+			<div class="big-b">
+				<div class="small-b">
+					<div class="center-w">
+						
+					</div>
+				</div>
+			</div>
+			<div class="big-w">
+				<div class="small-w">
+					<div class="center-b">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

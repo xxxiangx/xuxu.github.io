@@ -1,0 +1,291 @@
+@charset "utf-8";
+body{
+	min-width: 1000px;
+}
+/*QQ游戏*/
+.qqgame{
+	display: block;
+	width: 95px;
+	height: 95px;
+	background: url(../img/layer_ico.png) no-repeat;
+	position: fixed;
+	top: 278px;
+	right: 344px;
+}
+/*头部*/
+.tencent{
+	width: 225px;
+	height: 40px;
+	background: url(../img/ost-bg.png) no-repeat 0 -38px;
+	text-indent: -9999px;
+}
+.xuanwu{
+	height: 40px;
+	width: 230px;
+	background: url(../img/xuanwu.jpg) no-repeat;
+}
+.game,.grow{
+	line-height: 40px;
+}
+.grow{
+	padding-left: 20px;
+	background: url(../img/logo.png) no-repeat left center;
+	margin-right: 24px;
+}
+.game-span{
+	padding: 6px;
+	margin-left: 5px;
+	background: url(../img/ost-bg.png) no-repeat -150px -125px;
+}
+.game:hover .game-span{
+	background: url(../img/ost-bg.png) no-repeat -170px -125px;
+}
+.game:hover{
+	color: #ff4e00;
+}
+/*导航栏*/
+.nav-box{
+	height: 343px;
+	background: url(../img/bg_header.jpg) no-repeat center 0;
+}
+.nav-li a{
+	float: left;
+	margin: 34px 0 0 42px;
+	font-size: 22px;
+	opacity: 0;
+}
+.nav-li4 a{
+	margin-left: 203px;
+}
+.nav-wrap{
+	position: relative;
+	height: 343px;
+}
+.nav-video{
+	position: absolute;
+	display: block;
+	width: 130px;
+	height: 80px;
+	left: 290px;
+	bottom: 50px;
+}
+.nav-follow{
+	position: absolute;
+	display: block;
+	width: 110px;
+	height: 42px;
+	left: 482px;
+	bottom: 76px;
+}
+/*游戏部分*/
+.main-box{
+	height: 710px;
+	background: url(../img/bg_section.jpg) no-repeat center 0;
+}
+.main{
+	height: 710px;
+	background: url(../img/section.jpg) no-repeat center 0;
+}
+.main-t{
+	height: 264px;
+	position: relative;
+}
+.main-start{
+	display: block;
+	width: 202px;
+	height: 95px;
+	position: absolute;
+	top: 22px;
+	left: 22px;
+}
+.main-admin,.main-key{
+	display: block;
+	position: absolute;
+	width: 204px;
+	height: 38px;
+}
+.main-admin{
+	left: 20px;
+	bottom: 58px;
+	background: url(../img/sprites.jpg) no-repeat 0 -39px;
+}
+.main-key{
+	left: 20px;
+	bottom: 12px;
+	background: url(../img/sprites.jpg) no-repeat;
+}
+.main-banner{
+	width: 388px;
+	height: 206px;
+	position: absolute;
+	top: 25px;
+	left: 287px;
+	background: url(../img/main1.jpg) no-repeat;
+}
+.main-t-lists{
+	width: 268px;
+	height: 212px;
+	position: absolute;
+	top: 24px;
+	right: 26px;
+}
+.list-b{
+	padding: 10px;
+}
+.lists-t-li{
+	background-color: #8e4817;
+	float: left;
+	margin-left: 1px;
+}
+.lists-t-a{
+	display: block;
+	width: 66px;
+	line-height: 28px;
+	color: #feebc0;
+	text-align: center;
+	font-weight: bold;
+}
+.list-b-h5{
+	text-align: center;
+	font-size: 13px;
+	color: #d51a00;
+	margin-bottom: 5px;
+}
+.list-b-a,.main-b-c-a{
+	float: left;
+	width: 200px;
+	color: #884f1a;
+	line-height: 25px;
+}
+.list-b-span,.main-b-c-b-span{
+	float: right;
+	color: #884f1a;
+}
+.lists-t-a:hover{
+	color: #c67617;
+	background-color: #feebc0;
+}
+.main-b{
+	position: relative;
+}
+.main-b-l{
+	padding: 10px;
+	width: 200px;
+	height: 190px;
+	position: absolute;
+	top: 30px;
+	left: 22px;
+}
+.main-b-c{
+	padding: 6px 10px 0;
+	width: 394px;
+	height: 200px;
+	position: absolute;
+	top: 30px;
+	left: 262px;
+}
+.main-b-c-h4,.main-b-l-h4{
+	line-height: 30px;
+	color: #8a4a1c;
+	font-size: 14px;
+	padding: 0 0 7px 10px;
+}
+.main-b-l-h4{
+	width: 190px;
+	border-bottom: 1px solid #e4ab64;
+	margin-bottom: 10px;
+}
+.main-b-c-h4{
+	width: 100px;
+
+}
+.main-b-c-span,.main-b-l-span{
+
+	margin-right: 10px;
+}
+.main-b-c-span{
+	background: url(../img/sprites.jpg) no-repeat -24px -78px;
+	padding: 4px 14px;
+}
+.main-b-l-span{
+	background: url(../img/sprites.jpg) no-repeat 0 -78px;
+	padding: 5px 11px;
+}
+.main-b-l-li{
+	float: left;
+	margin: 5px 7px;
+}
+.main-b-l-a{
+	display: block;
+	width: 86px;
+	height: 25px;
+	background-color: #e4ab64;
+	color: #92491e;
+	line-height: 25px;
+	text-align: center;
+}
+.main-b-c-t{
+	border-bottom: 1px solid #e4ab64;
+	line-height: 30px;
+	padding-right: 14px;
+	margin-bottom: 6px;
+}
+.main-b-c-p{
+	color: #e3c69a;
+}
+.main-b-c-a{
+	width: 300px;
+}
+.main-b-r1,.main-b-r2{
+	display: block;
+	width: 270px;
+	height: 100px;
+	position: absolute;
+}
+.main-b-r1{
+	top: 33px;
+	right: 25px;
+	background: url(../img/main2.jpg) no-repeat;
+}
+.main-b-r2{
+	top: 142px;
+	right: 25px;
+	background: url(../img/main3.jpg) no-repeat;
+}
+/*尾部*/
+.foot{
+	background-color: #6a9b42;
+	padding: 40px 0;
+}
+.foot-wrap{
+	position: relative;
+	height: 174px;
+}
+.foot-l{
+	display: block;
+	width: 280px;
+	height: 45px;
+	background: url(../img/f_logo.png) no-repeat;
+	position: absolute;
+	top: 20px;
+	left: 38px;
+}
+.foot-r,.foot-r-a{
+	color: #386021;
+}
+.foot-r{
+	width: 670px;
+	padding-right: 40px;
+}
+.foot-r-a{
+	line-height: 32px;
+	margin-right: 4px;
+}
+.foot-p{
+	line-height: 20px;
+}
+.foot-span{
+	background: url(../img/icplogo.png) no-repeat;
+	padding: 1px 7px;
+	line-height: 15px;
+}

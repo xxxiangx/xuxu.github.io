@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*子代选择器*/
+			/*div>ul{
+				background-color: #000;
+			}*/
+			
+			
+			/*后代选择器*/
+			/*div a{
+				text-decoration: none;
+				color: #fff;
+			}*/
+			
+			
+			/*群组选择器*/
+			.zidai,.qunzu{
+				font-size: 20px;
+			}
+			.zlianjie,.qunlianjie{
+				color: #000;
+				text-decoration: none;
+			}
+			.zlianjie:hover{
+				color: #f00;
+			}
+			.zidai{
+				background-color: darkblue;
+			}
+			#qunzu{
+				background-color: gold;
+			}
+			.qunzu{
+				background-color: aquamarine !important;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="zidai">
+			<ul>
+				<li><a href="#" class="zlianjie">超链接</a></li>
+			</ul>
+		</div>
+		<div class="qunzu" id="qunzu">
+			<a href="#" class="qunlianjie">群组超链接</a>
+			<a href="#" class="qunlianjie">群组超链接</a>
+			<a href="#" class="qunlianjie">群组超链接</a>
+			<a href="#" class="qunlianjie">群组超链接</a>
+		</div>
+	</body>
+</html>

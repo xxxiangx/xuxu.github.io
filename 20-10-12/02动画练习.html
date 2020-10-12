@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.wrap{
+				width: 640px;
+				height: 400px;
+				margin: auto;
+				background: url(img/9.jpg) no-repeat;
+			}
+			.h2{
+				line-height: 100px;
+				border: none;
+				font-size: 28px;
+				text-align: right;
+				color: #fff;
+				width: 600px;
+				padding-top: 40px;
+				margin: 0 auto;
+				transition: all .3s linear;
+			}
+			.para{
+				color: rgba(255,255,255,0);
+				text-align: right;
+				padding-top: 200px;
+				width: 620px;
+				transition: all .3s linear;
+			}
+			.wrap:hover .h2{
+				border-bottom: 4px solid #fff;
+				line-height: 54px;
+			}
+			.wrap:hover .para{
+				color: rgba(255,255,255,1);
+			}
+			
+			.wrap2{
+				width: 636px;
+				height: 400px;
+				margin: auto;
+				background: url(img/13.jpg) no-repeat -4px 0;
+				transition: all .3s linear;
+				position: relative;
+			}
+			.mask2{
+				width: inherit;
+				height: inherit;
+				background-color: #42b078;
+				opacity: 0;
+				transition: all .3s linear;
+			}
+			.h3{
+				color: #fff;
+				font-size: 28px;
+				position: absolute;
+				top: 40px;
+				left: 40px;
+			}
+			.line{
+				width: 0;
+				height: 3px;
+				background-color: #fff;
+				transition: all .3s linear;
+				position: absolute;
+				top: 118px;
+				left: 40px;
+			}
+			.para2{
+				width: 600px;
+				color: #fff;
+				position: absolute;
+				top: 120px;
+				left: 650px;
+				transition: all .3s linear;
+			}
+			.wrap2:hover{
+				background: url(img/13.jpg) no-repeat 0 0;
+			}
+			.wrap2:hover .mask2{
+				opacity: 0.4;
+			}
+			.wrap2:hover .line{
+				width: 580px;
+			}
+			.wrap2:hover .para2{
+				left: 40px;
+			}
+			
+			.wrap3{
+				width: 640px;
+				height: 400px;
+				background: url(img/6.jpg) no-repeat;
+				margin: 0 auto;
+				position: relative;
+			}
+			.mask3{
+				width: inherit;
+				height: inherit;
+				background-color: #9e5406;
+				opacity: 0;
+				transition: all .3s linear;
+			}
+			.main{
+				border: none;
+				
+				position: absolute;
+				top: 50px;
+				left: 50px;
+				transition: all .3s linear;
+			}
+			.title{
+				font-size: 28px;
+				color: #fff;
+				margin: auto;
+				width: 200px;
+			}
+			.para3{
+				width: 300px;
+				color: #fff;
+				margin: 1em auto;
+			}
+			.wrap3:hover .mask3{
+				opacity: 0.3;
+			}
+			.wrap3:hover .main{
+				width: 540px;
+				height: 300px;
+				border: 1px solid #fff;
+			}
+			
+			.wrap4{
+				width: 640px;
+				height: 400px;
+				margin: auto;
+				color: #fff;
+				position: relative;
+				overflow: hidden;
+			}
+			.wrap4 img{
+				transform: scale(1.3);
+				transition: all .3s linear;
+			}
+			.wrap4-h2{
+				font-size: 28px;
+				position: absolute;
+				top: 140px;
+				left: 230px;
+				transition: all .3s linear;
+			}
+			.line1,.line2{
+				height: 1px;
+				width: 460px;
+				margin: 0 auto;
+				position: absolute;
+				left: 90px;
+				background-color: #fff;
+			}
+			.line1{
+				top: 200px;
+				transition: all .3s linear ;
+			}
+			.line2{
+				top: 201px;
+				transition: all .3s linear ;
+			}
+			.wrap4-p{
+				width: 560px;
+				text-align: center;
+				position: absolute;
+				top: 230px;
+				left: 40px;
+				transition: all .3s linear;
+			}
+			.wrap4:hover img{
+				transform: scale(1);
+			}
+			.wrap4:hover .line1{
+				transform: rotate(45deg);
+			}
+			.wrap4:hover .line2{
+				transform: rotate(-45deg);
+			}
+			.wrap4:hover .wrap4-h2{
+				top: 160px;
+			}
+			.wrap4:hover .wrap4-p{
+				top: 210px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<h2 class="h2">SWEETMARLEY</h2>
+			<p class="para">Marley tried to convince her but she was not interested.</p>
+		</div>
+		<div class="wrap2">
+			<div class="mask2"></div>
+			<h3 class="h3">FREESARAH</h3>
+			<div class="line"></div>
+			<p class="para2">Sarah likes to watch clouds. She's quite depressed.</p>
+		</div>
+<!--		<div class="wrap3">-->
+			<div class="mask3"></div>
+			<div class="main"></div>
+			<h4 class="title">FRESHBUBBA</h4>
+			<p class="para3">Bubba likes to appear out of thin air.</p>
+		</div>
+		<div class="wrap4">
+			<img src="img/5.jpg"/>
+			<div class="mask"></div>
+			<h2 class="wrap4-h2">WILD ROMEO</h2>
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<p class="wrap4-p">Romeo never knows what he wants. He seemed to be very cross about something.</p>
+		</div>
+	</body>
+</html>
