@@ -49,7 +49,7 @@
 				height: 25px;
 				background-color: #fff;
 				position: absolute;
-				left: 60px;
+				left: 30px;
 			}
 			.semicircle1{
 				background-color: #fff;
@@ -57,7 +57,7 @@
 				top: 70px;
 				transform: rotate(-45deg);
 				transform-origin: bottom center;
-				animation: roll .7s linear infinite alternate;
+				animation: roll .7s linear infinite;
 			}
 			.semicircle2{
 				background-color: #fff;
@@ -65,7 +65,7 @@
 				top: 95px;
 				transform: rotate(45deg);
 				transform-origin: top center;
-				animation: roll1 .7s linear infinite alternate;
+				animation: roll1 .7s linear infinite;
 			}
 			.point{
 				width: 300px;
@@ -89,16 +89,22 @@
 				from{
 					transform: rotate(-45deg);
 				}
-				to{
+				50%{
 					transform: rotate(0);
+				}
+				to{
+					transform: rotate(-45deg);
 				}
 			}
 			@keyframes roll1{
 				from{
 					transform: rotate(45deg);
 				}
-				to{
+				50%{
 					transform: rotate(0);
+				}
+				to{
+					transform: rotate(45deg);
 				}
 			}
 			@keyframes eat{
