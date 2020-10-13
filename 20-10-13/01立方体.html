@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.wrap{
+				width: 300px;
+				height: 300px;
+				margin: 200px auto;
+				position: relative;
+				transform-style: preserve-3d;
+				transform: rotateX(-30deg) rotateY(-30deg);
+			}
+			.wrap div{
+				width: 300px;
+				height: 300px;
+				background: rgba(205,205,205,.5);
+				position: absolute;
+				font-size: 100px;
+				text-align: center;
+				line-height: 300px;
+				border: 1px solid red;
+				transition: all 1s ;
+			}
+			.front{
+				transform: translateZ(150px);
+			}
+			.back{
+				transform: rotateY(180deg) translateZ(150px);
+			}
+			.left{
+				transform: rotateY(-90deg) translateZ(150px);
+			}
+			.right{
+				transform: rotateY(90deg) translateZ(150px);
+			}
+			.top{
+				transform: rotateX(90deg) translateZ(150px);
+			}
+			.bottom{
+				transform: rotateX(-90deg) translateZ(150px);
+			}
+			.wrap:hover .front{
+				transform: translateZ(250px);
+			}
+			.wrap:hover .back{
+				transform: rotateY(180deg) translateZ(250px);
+			}
+			.wrap:hover .left{
+				transform: rotateY(-90deg) translateZ(250px);
+			}
+			.wrap:hover .right{
+				transform: rotateY(90deg) translateZ(250px);
+			}
+			.wrap:hover .top{
+				transform: rotateX(90deg) translateZ(250px);
+			}
+			.wrap:hover .bottom{
+				transform: rotateX(-90deg) translateZ(250px);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="front">前</div>
+			<div class="back">后</div>
+			<div class="left">左</div>
+			<div class="right">右</div>
+			<div class="top">上</div>
+			<div class="bottom">下</div>
+		</div>
+	</body>
+</html>

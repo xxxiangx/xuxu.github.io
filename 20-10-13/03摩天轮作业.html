@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<style type="text/css">
+			html,body{
+				height: 100%;	
+			}
+			body{
+				background: url(img/2.jpg) no-repeat;
+				-webkit-background-size: 100% 100%;
+				background-size: 100% 100%;
+				
+			}
+			.box{
+				width: 786px;
+				height: 786px;
+				background: url(img/fsw.png) no-repeat;
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+				animation: mtl 15s linear infinite;
+			}
+			.lucky{
+				width: 577px;
+				height: 257px;
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+				z-index: 1;
+			}
+			.box img{
+				display: block;
+				position: absolute;
+				animation: child 15s linear infinite;
+				transform-origin: 50% 0;
+			}
+			.child1{
+				left: 180px;
+				top: 20px;
+			}
+			.child2{
+				right: 180px;
+				top: 20px;
+			}
+			.child3{
+				left: 10px;
+				top: 200px;
+			}
+			.child4{
+				right: 10px;
+				top: 200px;
+			}
+			.child5{
+				left: 10px;
+				bottom: 140px;
+			}
+			.child6{
+				right: 10px;
+				bottom: 140px;
+			}
+			.child7{
+				left: 160px;
+				bottom: -60px;
+			}
+			.child8{
+				right: 160px;
+				bottom: -60px;
+			}
+			@keyframes mtl{
+				from{
+					transform: rotate(0deg);
+				}
+				25%{
+					transform: rotate(90deg);
+				}
+				50%{
+					transform: rotate(180deg);
+				}
+				75%{
+					transform: rotate(270deg);
+				}
+				to{
+					transform: rotate(360deg);
+				}
+			}
+			@keyframes child{
+				from{
+					transform: rotate(0deg);
+				}
+				25%{
+					transform: rotate(-90deg);
+				}
+				50%{
+					transform: rotate(-180deg);
+				}
+				75%{
+					transform: rotate(-270deg);
+				}
+				to{
+					transform: rotate(-360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<img src="img/big-title.png" class="lucky"/>
+		</div>
+		<div class="box">
+
+			<img src="img/boy.png" class="child1"/>
+			<img src="img/dog.png" class="child2"/>
+			<img src="img/girl.png" class="child3"/>
+			<img src="img/girls.png" class="child4"/>
+			<img src="img/hairboy.png" class="child5"/>
+			<img src="img/mimi.png" class="child6">
+			<img src="img/shamegirl.png" class="child7"/>
+			<img src="img/mudog.png" class="child8">
+		</div>
+	</body>
+</html>

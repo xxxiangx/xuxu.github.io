@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>text-shadow</title>
+<style>
+*{margin:0;padding:0;}
+ul{list-style:none;}
+/* .demo{width:100px;height:150px;background:#f00;margin:100px auto;position:relative;transform: rotateY(0);transform-style: preserve-3d;transition: all 1s;}
+.demo img{display:block;width:100px;height:150px;position:absolute;}
+.demo img:nth-child(1){transform: rotateY(0) translateZ(200px);}
+.demo img:nth-child(2){transform: rotateY(-40deg) translateZ(200px);}
+.demo img:nth-child(3){transform: rotateY(80deg) translateZ(200px);}
+.demo img:nth-child(4){transform: rotateY(120deg) translateZ(200px);}
+.demo img:nth-child(5){transform: rotateY(160deg) translateZ(200px);}
+.demo img:nth-child(6){transform: rotateY(200deg) translateZ(200px);}
+.demo img:nth-child(7){transform: rotateY(240deg) translateZ(200px);}
+.demo:hover{transform:rotateX(10deg) rotateY(-200deg);}  */
+ul{width:200px;height:200px;position:fixed;left:0;right:0;top:0;bottom:0;margin:auto;transform-style:preserve-3d;transition: all 2s;}
+ul li{position:absolute;left:0;top:0;width:200px;height:200px;transition:all 1s;}
+ul li:nth-child(1){background:#dd0;transform:rotateY(90deg) translateZ(100px) ;}
+ul li:nth-child(2){background:#d00;transform:rotateY(-90deg) translateZ(100px);}
+ul li:nth-child(3){background:#d0d;transform:rotateX(90deg) translateZ(100px);}
+ul li:nth-child(4){background:#ccd;transform:rotateX(-90deg) translateZ(100px);}
+ul li:nth-child(5){background:#ada;transform:translateZ(100px);}
+ul li:nth-child(6){background:#ada;transform:translateZ(-100px) rotateY(180deg) ;}
+ul li img{display:block;width:200px;height:200px;}
+ul:hover{transform:rotateY(360deg) rotateX(10deg);}
+ul:hover li{opacity:0.6;}
+ul:hover li:nth-child(1){transform:rotateY(90deg) translateZ(200px) ;}
+ul:hover li:nth-child(2){transform:rotateY(-90deg) translateZ(200px) ;}
+ul:hover li:nth-child(3){transform:rotateX(90deg) translateZ(200px);}
+ul:hover li:nth-child(4){transform:rotateX(-90deg) translateZ(200px)}
+ul:hover li:nth-child(5){transform:translateZ(200px);}
+ul:hover li:nth-child(6){transform:translateZ(-200px) rotateY(180deg);}
+</style>
+</head> 
+<body>
+<!-- <div class="demo">
+	<img class="demo1" src="k.jpg" alt="">
+	<img class="demo1" src="k.jpg" alt="">
+	<img class="demo1" src="k.jpg" alt="">
+	<img class="demo1" src="k.jpg" alt="">
+	<img class="demo1" src="k.jpg" alt="">
+	<img class="demo1" src="k.jpg" alt="">
+	<img class="demo1" src="k.jpg" alt="">
+</div> -->
+<ul>
+	<li><img src="k.jpg" alt="" /></li>
+	<li><img src="k.jpg" alt="" /></li>
+	<li><img src="k.jpg" alt="" /></li>
+	<li><img src="k.jpg" alt="" /></li>
+	<li><img src="k.jpg" alt="" /></li>
+	<li><img src="k.jpg" alt="" /></li>
+</ul>
+</body>
+</html>

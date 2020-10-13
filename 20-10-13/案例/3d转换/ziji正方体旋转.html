@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+	html{
+		background:linear-gradient(#ff0 0%, #000 100%);
+		height: 100%;
+	}
+	#all{
+		width:200px;
+		height:200px;
+		margin:150px auto;
+		perspective:1500px;
+	}
+	#imgs{
+		width:200px;
+		height:200px;
+		position:relative;
+		transform-style: preserve-3d;
+		opacity:0.5;
+		/*调用动画*/
+		animation:move 5s linear infinite;
+	}
+	#imgs img{
+		width:200px;
+		height:200px;
+		position:absolute;
+		transform-style: preserve-3d;
+	}
+	/*图片排位*/
+	.a1{
+		transform:rotateY(0deg) translateZ(100px);
+	}
+	.a2{
+		transform:translateZ(-100px) rotateY(180deg);/*后面图片：必须先位移再旋转*/
+	}
+	.a3{
+		transform:rotateY(90deg) translateZ(100px);
+	}
+	.a4{
+		transform:rotateY(-90deg) translateZ(100px);
+	}
+	.a5{
+		transform:rotateX(90deg) translateZ(100px);
+	}
+	.a6{
+		transform:rotateX(-90deg) translateZ(100px);
+	}
+	/*定义动画*/
+	@keyframes move{
+		from{
+			transform:rotateX(0deg) rotateY(0deg);
+		}
+		to{
+			transform:rotateX(360deg) rotateY(360deg);
+		}
+	}
+	/*鼠标悬浮效果*/
+	#imgs:hover .a1{
+		transform:translateZ(200px);
+	}
+	#imgs:hover .a2{
+		transform:translateZ(-200px) rotateY(180deg);
+	}
+	#imgs:hover .a3{
+		transform:rotateY(90deg) translateZ(200px);
+	}
+	#imgs:hover .a4{
+		transform:rotateY(-90deg) translateZ(200px);
+	}
+	#imgs:hover .a5{
+		transform:rotateX(90deg) translateZ(200px);
+	}
+	#imgs:hover .a6{
+		transform:rotateX(-90deg) translateZ(200px);
+	}
+	/*里面立方体*/
+	#imgs2{
+		transform-style: preserve-3d;
+	}
+	#imgs2 img{
+		width:100px;
+		height:100px;
+		position:absolute;
+		transform-style: preserve-3d;
+		top:50px;
+		left:50px;
+	}
+
+	.b1{transform: rotateY(0deg) translateZ(50px);}
+
+	.b2{transform:translateZ(50px) rotateY(-180deg) ;}
+
+	.b3{transform: rotateY(90deg) translateZ(50px);}
+
+	.b4{transform: rotateY(-90deg) translateZ(50px);}
+
+	.b5{transform: rotateX(90deg) translateZ(50px);}
+
+	.b6{transform: rotateX(-90deg) translateZ(50px);}
+  </style>
+ </head>
+ <body>
+	<div id="all">
+		<div id="imgs">
+			<img class="a1" src="img/1.jpg"/>
+			<img class="a2" src="img/2.jpg"/>
+			<img class="a3" src="img/3.jpg"/>
+			<img class="a4" src="img/4.jpg"/>
+			<img class="a5" src="img/5.jpg"/>
+			<img class="a6" src="img/6.jpg"/>
+			<div id="imgs2">
+				<img class="b1" src="img/01.png"/>
+				<img class="b2" src="img/02.png"/>
+				<img class="b3" src="img/03.png"/>
+				<img class="b4" src="img/04.png"/>
+				<img class="b5" src="img/05.png"/>
+				<img class="b6" src="img/06.png"/>
+			</div>
+		</div>
+		<!--小立方体-->
+		
+	</div>
+
+ </body>
+</html>
