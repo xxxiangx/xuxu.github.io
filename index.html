@@ -27,8 +27,9 @@
 		height: 0;
 	}
 
+
 	/* flex类名 */
-	/* 定义 */
+	/* 定义  作为弹性伸缩盒显示*/
 	.flex-def {
 		display: -webkit-box;
 		display: -moz-box;
@@ -36,7 +37,47 @@
 		display: -webkit-flex;
 		display: flex;
 	}
+	/*主轴排列方向*/
+	/* 主轴从上到下 */
+	.flex-zTopBottom {
+		-webkit-box-direction: normal;
+		-webkit-box-orient: vertical;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
 
+	/* 主轴从下到上 */
+	.flex-zBottomTop {
+		-webkit-box-pack: end;
+		-webkit-box-direction: reverse;
+		-webkit-box-orient: vertical;
+		-moz-flex-direction: column-reverse;
+		-webkit-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+
+	/* 主轴从左到右 */
+	.flex-zLeftRight {
+		-webkit-box-direction: normal;
+		-webkit-box-orient: horizontal;
+		-moz-flex-direction: row;
+		-webkit-flex-direction: row;
+		flex-direction: row;
+	}
+
+	/* 主轴从右到左 */
+	.flex-zRightLeft {
+		-webkit-box-pack: end;
+		-webkit-box-direction: reverse;
+		-webkit-box-orient: horizontal;
+		-moz-flex-direction: row-reverse;
+		-webkit-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+	}
+	
+	
+	/*justify-content主轴对齐方式*/
 	/* 主轴居中 */
 	.flex-zCenter {
 		-webkit-box-pack: center;
@@ -69,6 +110,7 @@
 		justify-content: start;
 	}
 
+	/*主轴自动分配距离*/
 	.flex-zSpace {
 		justify-content: space-around
 	}
@@ -113,53 +155,62 @@
 		align-items: stretch;
 	}
 
-	/* 主轴从上到下 */
-	.flex-zTopBottom {
-		-webkit-box-direction: normal;
-		-webkit-box-orient: vertical;
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		flex-direction: column;
-	}
-
-	/* 主轴从下到上 */
-	.flex-zBottomTop {
-		-webkit-box-pack: end;
-		-webkit-box-direction: reverse;
-		-webkit-box-orient: vertical;
-		-moz-flex-direction: column-reverse;
-		-webkit-flex-direction: column-reverse;
-		flex-direction: column-reverse;
-	}
-
-	/* 主轴从左到右 */
-	.flex-zLeftRight {
-		-webkit-box-direction: normal;
-		-webkit-box-orient: horizontal;
-		-moz-flex-direction: row;
-		-webkit-flex-direction: row;
-		flex-direction: row;
-	}
-
-	/* 主轴从右到左 */
-	.flex-zRightLeft {
-		-webkit-box-pack: end;
-		-webkit-box-direction: reverse;
-		-webkit-box-orient: horizontal;
-		-moz-flex-direction: row-reverse;
-		-webkit-flex-direction: row-reverse;
-		flex-direction: row-reverse;
-	}
-
+	
+	
 	/* 是否允许子元素伸缩 */
-	.flex-item {
+	/*子元素放大比例*/
+	.flex-grow {
 		-webkit-box-flex: 1.0;
 		-moz-flex-grow: 1;
 		-webkit-flex-grow: 1;
 		flex-grow: 1;
 	}
-
+	/*子元素缩小比例 0:元素不缩小*/
+	.flex-shrink {
+		-webkit-box-flex: 1.0;
+		-moz-flex-grow: 1;
+		-webkit-flex-grow: 1;
+		flex-shrink: 1;
+	}
+	
+	
+	/*设置换行*/
+	/*容器为多行,子项内部会发生断行*/
 	.flex-wrap {
 		flex-wrap: wrap;
+	}
+	/*容器为单行,该情况下子项可能会溢出容器*/
+	.flex-nowrap {
+		flex-wrap: nowrap;
+	}
+	/*反转排列*/
+	.flex-wrap-reverse {
+		flex-wrap: wrap-reverse;
+	}
+	
+	/*行与行之间对齐方式*/
+	/*没有行间距*/
+	.aligh-content-flex-start{
+		align-content: flex-start;
+	}
+	/*底对齐没有行间距*/
+	.aligh-content-flex-end{
+		align-content: flex-end;
+	}
+	/*居中没有行间距*/
+	.aligh-content-center{
+		align-content: center;
+	}
+	/*两端对齐，中间自动分配*/
+	.aligh-content-space-between{
+		align-content: space-between;
+	}
+	/*自动分配距离*/
+	.aligh-content-space-around{
+		align-content: space-around;
+	}
+	/*默认值，项目被拉伸以适应容器*/
+	.aligh-content-stretch{
+		align-content: stretch;
 	}
 </style>

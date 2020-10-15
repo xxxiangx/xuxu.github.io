@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*input[class^="co"]{
+				background-color: pink;
+			}*/
+			/*input[class$="st"]{
+				background-color: pink;
+			}*/
+			p[class*="ra"]{
+				background-color: pink;
+			}
+			input[class|="body"]{
+				background-color: orchid;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">这是一个盒子</div>
+		<p class="para1">这是一个段落</p>
+		<p class="para2">这是第二个段落</p>
+		<input type="text" class="content post body-a" />
+		<input type="text" class="container range" />
+	</body>
+</html>
