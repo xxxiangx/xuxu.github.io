@@ -87,7 +87,7 @@ body{
 .main-nav{
 	width: 178px;
 	background-color: #470D0C;
-	padding: 20px 22px 20px 30px;
+	padding: 20px 22px 20px 32px;
 }
 .main-nav-li{
 	line-height: 42px;
@@ -95,6 +95,251 @@ body{
 	background: url(../img/xiaomi_07.png) no-repeat right center;
 }
 .banner-pic{
-	width: 1000px;
+	width: 998px;
 	height: 460px;
+}
+.banner-b{
+	padding-bottom: 26px;
+}
+.subnav{
+	width: 214px;
+	height: 154px;
+	background-color: #605750;
+	color: #7E837D;
+	background: url(../img/varity-bg.png) no-repeat;
+	padding: 8px 10px;
+}
+.subnav-li{
+	float: left;
+	width: 48px;
+	line-height: 24px;
+	padding: 12px;
+	text-align: center;
+}
+.subnav>:nth-child(3),.subnav>:nth-child(6){
+	padding-right: 0;
+}
+
+.subnav>:last-child{
+	border: none;
+}
+.subnav-pic{
+	display: block;
+	margin: 0 auto;
+}
+.banner-b-pic{
+	width: 316px;
+	height: 170px;
+	margin-left: 16px;
+}
+/*小米闪购*/
+.sg-title{
+	line-height: 58px;
+	font-size: 22px;
+	color: #323232;
+}
+.sg-tab{
+	width: 69px;
+	height: 22px;
+	border: 1px solid #DFDFDF;
+	margin-top: 24px;
+}
+.sg-tab1,.sg-tab2{
+	width: 34px;
+	height: 22px;
+}
+.sg-tab1{
+	background: url(../img/arrow_lt.png) no-repeat center center;
+	border-right: 1px solid #DFDFDF;
+}
+.sg-tab2{
+	background: url(../img/arrow_rt.png) no-repeat center center;
+}
+.sg-b{
+	padding-bottom: 40px;
+}
+.sg-li,.sg-li1{
+	float: left;
+	width: 234px;
+	height: 339px;
+	border-top: 1px solid #E95952;
+}
+.sg-li{
+	height: 295px;
+	margin-left: 14px;
+	text-align: center;
+	background-color: #FAFAFA;
+	padding-top: 44px;
+}
+.sg-b>:nth-child(1){
+	border-top: 1px solid #FDBE4E;
+}
+.sg-b>:nth-child(2){
+	border-top: 1px solid #A1D27B;
+}
+.sg-b>:nth-child(3){
+	border-top: 1px solid #57AFF5;
+}
+.sg-b>:nth-child(4){
+	border-top: 1px solid #EA6B67;
+}
+.sg-h5{
+	padding-top: 24px;
+	font-size: 14px;
+}
+.sg-p{
+	padding-top: 8px;
+	color: #AEA5A6;
+}
+.sg-price{
+	font-size: 14px;
+	color: #F49425;
+	padding-top: 16px;
+}
+.sg-price span{
+	font-size: 12px;
+	text-decoration: line-through;
+	color: #AEA5A6;
+}
+.sg-banner{
+	width: 1230px;
+	height: 120px;
+	background: url(../img/exhibition2.jpg) no-repeat center center;
+	padding-bottom: 42px;
+}
+/*产品部分*/
+.product{
+	background-color: #F5F5F5;
+	padding-bottom: 42px;
+}
+/*手机部分*/
+.phone-t{
+	padding-top: 34px;
+}
+.phone-h4{
+	line-height: 20px;
+	font-size: 22px;
+	color: #323232;
+}
+.more{
+	width: 90px;
+	height: 30px;
+	background: url(../img/more.png) no-repeat right center;
+	line-height: 30px;
+	font-size: 16px;
+}
+.phone-li1{
+	float: left;
+	width: 234px;
+	height: 614px;
+	margin-top: 14px;
+}
+.phone-li{
+	float: left;
+	background-color: #fff;
+	width: 236px;
+	height: 300px;
+	margin: 14px 0 0 12px;
+	text-align: center;
+}
+.phone-sale1{
+	background-color: none;
+	height: 20px;
+}
+.phone-sale{
+	width: 64px;
+	height: 20px;
+	background-color: #E53935;
+	color: #fff;
+	line-height: 20px;
+	margin: 0 auto;
+}
+.phone-h5{
+	padding-top: 22px;
+	font-size: 14px;
+}
+.phone-p{
+	padding-top: 10px;
+	color: #AEA5A6;
+}
+.phone-price{
+	padding-top: 16px;
+	font-size: 14px;
+	color: #F49425;
+}
+.phone-price span{
+	font-size: 12px;
+	color: #AEA5A6;
+	text-decoration: line-through;
+}
+/*家电部分*/
+.hot-li{
+	float: left;
+	margin-left: 30px;
+	line-height: 24px;
+	font-size: 16px;
+}
+.hot-li:hover{
+	border-bottom: 2px solid #FE6800;
+	color: #FE6800;
+}
+/*尾部*/
+.footer{
+	padding-top: 36px;
+}
+.footer-ul{
+	padding: 26px 0;
+	border-bottom: 1px solid #E0E0E0;
+}
+.footer-li{
+	float: left;
+	width: 240px;
+	line-height: 26px;
+	text-align: center;
+	border-right: 1px solid #E0E0E0;
+	font-size: 16px;
+}
+.footer-ul>:last-child{
+	border: none;
+}
+.service{
+	padding: 40px 0;
+}
+.join{
+	border-right: 1px solid #EBEBEB;
+}
+.lists{
+	margin-right: 100px;
+}
+.lists-h6{
+	padding-bottom: 16px;
+	font-size: 14px;
+}
+.lists-li{
+	line-height: 28px;
+	color: #92928C;
+}
+.cont{
+	text-align: center;
+	width: 250px;
+	margin: 0 auto;
+}
+.cont-p1{
+	font-size: 20px;
+	height: 30px;
+	color: #FD7238;
+}
+.cont-p2{
+	width: 134px;
+	margin: 0 auto;
+	line-height: 18px;
+	padding-bottom: 14px;
+}
+.didi{
+	width: 120px;
+	height: 28px;
+	border: 1px solid #FD7238;
+	line-height: 28px;
+	margin: 0 auto;
+	color: #FD7238;
 }
