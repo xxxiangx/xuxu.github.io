@@ -1,0 +1,216 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	background-color: #EFF0EC;
+}
+.header{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	border-top: 1px solid #DCDBD7;
+	border-bottom: 1px solid #DCDBD7;
+	padding: 8px;
+	background-color: #fff;
+}
+.footer{
+	padding: 16px 8px 20px;
+	flex-direction: column;
+	background-color: #fff;
+}
+/*头部开始*/
+/*搜索栏*/
+.ht{
+	display: flex;
+	flex-direction: row;
+	height: 50px;
+	padding: 10px 0;
+	background-color: #FFBE00;
+	text-align: center;
+}
+.city{
+	width: 74px;
+	line-height: 30px;
+	font-size: 12px;
+}
+.pic{
+	width: 48px;
+}
+.search{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+}
+.search{
+	border-radius: 8px 0 0 8px;
+	border-color: #FFFAE6;
+	background: url(../img/mt_06.png) no-repeat left center;
+	background-color: #FFFAE6;
+	padding-left: 24px;
+}
+/*广告,跳转APP部分*/
+.banner{
+	background-color: #000000;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+.logo{
+	margin-left: 14px;
+	color: #fff;
+	display: flex;
+}
+.logo-pic{
+	margin-right: 8px;
+}
+.logo-h4{
+	font-size: 14px;
+}
+.logo-p{
+	font-size: 12px;
+}
+.link{
+	width: 56px;
+	height: 32px;
+	background-color: #FEC900;
+	margin-right: 12px;
+	line-height: 32px;
+	border-radius: 8px;
+	text-align: center;
+}
+/*导航部分*/
+.nav{
+	background-color: #fff;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #DBD8D3;
+}
+.list{
+	width: 20%;
+	text-align: center;	
+	padding-bottom: 13px;
+}
+.list-pic{
+	margin-top: 10px;
+}
+.list-p{
+	margin-top: 8px;
+}
+/*猜你喜欢部分*/
+.main-t{
+	line-height: 38px;
+	font-size: 18px;
+}
+.content{
+	display: flex;
+	padding: 10px 0;
+	border-top: 1px solid #DCDBD7;
+}
+.con-pic{
+	width: 91px;
+	margin-right: 10px;
+}
+.con-c{
+	flex-grow: 1;
+}
+.con-h5{
+	line-height: 26px;
+	font-size: 16px;
+}
+.con-p{
+	color: #7B7774;
+}
+.con-price{
+	margin-top: 26px;
+	color: #FC8229;
+	font-size: 14px;
+}
+.con-price span{
+	font-size: 12px;
+	color: #65686A;
+}
+.sale{
+	margin-top: 66px;
+}
+.main-b{
+	border-top: 1px solid #DCDBD7;
+	/*border-bottom: 1px solid #DCDBD7;*/
+}
+.main-b{
+	color: #F88F12;
+	display: flex;
+	justify-content: space-between;
+	padding: 12px 8px 4px 10px;
+	font-size: 14px;
+}
+/*底部开始*/
+.ft{
+	display: flex;
+	padding: 0 16px;
+	justify-content: space-between;
+}
+.login,.ft{
+	display: flex;
+}
+.ft{
+	justify-content: space-between;
+}
+.box{
+	width: 54px;
+	line-height: 28px;
+	border-radius: 5px;
+	background-color: #FFC100;
+	text-align: center;
+	margin-right: 10px;
+}
+.f-city{
+	color: #999;
+	line-height: 28px;
+}
+.f-city span{
+	background: url(../img/location_03.png) no-repeat left center;
+	color: #000;
+	padding-left: 14px;
+}
+nav{
+	padding: 28px 0 24px;
+	display: flex;
+	justify-content: space-around;
+}
+li{
+	width: 25%;
+	color: #FF8216;
+	text-align: center;
+}
+.f-link{
+	text-align: center;
+}
+ .f-link a{
+	margin-right: 26px;
+}
+.copyright{
+	display: flex;
+	margin-top: 24px;
+	color: #9A9797;
+}
+.copy{
+	background-color: #A2A2A2;
+	height: 2px;
+	flex-grow: 1;
+	align-self: center;
+}
+.copyright-p{
+	width: 206px;
+	text-align: center;
+}
