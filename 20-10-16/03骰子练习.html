@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body{
+				background-color: grey;
+			}
+			.box{
+				width: 30px;
+				height: 30px;
+				border: 1px solid #000;
+				border-radius: 50%;
+				background-color: #000;
+			}
+			.one,.two,.three,.four,.five,.six{
+				width: 120px;
+				height: 120px;
+				border: 1px solid #fff;
+				border-radius: 10px;
+				background-color: #fff;
+				padding: 10px;
+				display: flex;
+				margin: 100px;
+			}
+			
+			.one{
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			.two{
+				
+				flex-direction: row;
+				justify-content: space-between;
+			}
+			.two>:nth-child(2){
+				align-self: flex-end;
+			}
+			
+			.three{
+				flex-direction: row;
+				justify-content: space-between;
+			}
+			.three>:nth-child(2){
+				align-self: center;
+			}
+			.three>:nth-child(3){
+				align-self: flex-end;
+			}
+			
+			.four{
+				flex-direction: row;
+				justify-content: space-between;
+			}
+			.four-l,.four-r{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			
+			.five{
+				flex-direction: row;
+				justify-content: space-between;
+			}
+			.five-l,.five-r{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			.five>:nth-child(2){
+				align-self: center;
+			}
+			
+			.six{
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			.six-l,.six-r{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="one">
+			<div class="box"></div>
+		</div>
+		<div class="two">
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+		<div class="three">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+		<div class="four">
+			<div class="four-l">
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+			<div class="four-r">
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+		</div>
+		<div class="five">
+			<div class="five-l">
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+			<div class="box"></div>
+			<div class="five-r">
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+		</div>
+		<div class="six">
+			<div class="six-l">
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+			<div class="six-r">
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+		</div>
+	</body>
+</html>

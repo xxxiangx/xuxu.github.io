@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			html,body{
+				height: 100%;
+			}
+			body{
+				display: flex;
+				flex-direction: column;
+			}
+			header{
+				height: 60px;
+				background-color: red;
+			}
+			footer{
+				height: 100px;
+				background-color: blue;
+			}
+			main{
+				flex-grow: 1;
+				background-color: greenyellow;
+				display: flex;
+				flex-direction: row;
+			}
+			aside{
+				width: 50px;
+				background-color: lavender;
+			}
+			nav{
+				width: 100px;
+				background-color: aliceblue;
+			}
+			section{
+				flex-grow: 1;
+				background-color: cadetblue;
+			}
+		</style>
+	</head>
+	<body>
+		<!--圣杯布局：固定两栏布局-->
+		<header></header>
+		<main>
+			<aside></aside>
+			<section></section>
+			<nav></nav>
+		</main>
+		<footer></footer>
+	</body>
+</html>
