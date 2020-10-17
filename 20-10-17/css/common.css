@@ -1,0 +1,39 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,dd,input{
+	margin: 0;
+	padding: 0;
+}
+ul,ol,li{
+	list-style: none;
+}
+img{
+	vertical-align: middle;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+body{
+	font: 12px "microsoft yahei";
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+.wrapper{
+	width: 980px;
+	margin: 0 auto;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clr:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}

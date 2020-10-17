@@ -1,0 +1,235 @@
+@charset "utf-8";
+body{
+	min-width: 980px;
+	background-color: #F6F6F6;
+}
+/*头部*/
+.header{
+	padding: 20px 0;
+}
+.notice{
+	background-color: #F0F0F0;
+	color: #D0D0D0;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.wel{
+	background: url(../img/icon10.png) no-repeat left;
+	padding-left: 34px;
+}
+.link img{
+	margin-right: 30px;
+	width: 12px;
+	height: 12px;
+}
+/*logo部分*/
+.title img{
+	width: 270px;
+	padding-bottom: 24px;
+}
+.login{
+	padding: 6px 0;
+}
+.box{
+	width: 50px;
+	border: 1px solid #EABF3F;
+	border-radius: 6px;
+	margin-right: 20px;
+	float: left;
+	line-height: 26px;
+	text-align: center;
+	color: #626868;
+}
+.box:hover{
+	background-color: #EABF3F;
+	color: #fff;
+}
+/*导航部分*/
+.nav-li{
+	margin: 0 50px;
+	line-height: 28px;
+	float: left;
+	padding: 0 6px;
+	font-size: 14px;
+}
+.nav-li:hover{
+	background-color: #0873A3;
+	color: #fff;
+}
+/*广告部分*/
+.wrap{
+	position: relative;
+	height: 360px;
+}
+.banner{
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+}
+/*累计部分*/
+.shop{
+	padding: 36px 0;
+	text-align: center;
+}
+.alr{
+	width: 25%;
+	float: left;
+}
+.alr-pic{
+	width: 26px;
+	height: 30px;
+}
+.alr-num{
+	font-size: 18px;
+	padding: 24px 0;
+}
+.alr-total{
+	line-height: 22px;
+	font-size: 14px;
+}
+/*提供数据部分*/
+.msg{
+	padding-bottom: 16px;
+	color: #9E9E9E;
+}
+.data{
+	background: url(../img/icon-tanhao.png) no-repeat left center;
+	padding-left: 20px;
+}
+.more{
+	margin-right: 30px;
+}
+.more-pic{
+	width: 13px;
+	height: 13px;
+	margin-left: 8px;
+}
+/*当前的状态*/
+.status{
+	margin-right: 24px;
+	background-color: #EAF0FC;
+	width: 220px;
+	text-align: center;
+	padding: 40px 0 34px;
+}
+.status-p1{
+	width: 72px;
+	font-size: 14px;
+	line-height: 22px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #415DE4;
+	margin: 0 auto;
+	margin-bottom: 12px;
+}
+.status-p2{
+	color: #8A8A92;
+}
+/*服务部分*/
+.serv-li1,.serv-li2,.serv-li3{
+	margin: 22px ;
+}
+.serv-li2,.serv-li3{
+	width: 242px;
+	padding: 22px 0 0 38px;
+	height: 206px;
+}
+.serv-li1{
+	background: url(../img/bg-1.png) no-repeat bottom center;
+	background-color: #A4D0FF;
+	padding: 58px 72px 230px 46px;
+	width: 156px;
+}
+.serv-h5{
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+.serv-p{
+	text-indent: 2em;
+	line-height: 28px;
+	font-size: 14px;
+}
+.serv-li2{
+	background: url(../img/bg-2.png) no-repeat 90% bottom;
+	background-color: #EA999F;
+}
+.serv-li3{
+	background: url(../img/bg-3.png) no-repeat 90% bottom;
+	background-color: #FFD7A6;
+}
+/*新闻发布部分*/
+.release{
+	background-color: #EAF0FC;
+	padding: 20px 0;
+}
+.news{
+	border-right: 1px solid #A4A6AB;
+	width: 450px;
+	height: 230px;
+	padding: 0 40px 20px 0;
+	font-size: 14px;
+}
+.news-h4{
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+.news-span{
+	color: #706E71;
+	font-size: 12px;
+}
+.news-p{
+	text-indent: 2em;
+}
+.news-date{
+	text-align: right;
+}
+.prod{
+	margin-left: 40px;
+	width: 416px;
+	height: 230px;
+}
+/*底部*/
+.footer{
+	background: url(../img/banner_07.png) no-repeat;
+}
+.footer img{
+	width: 94px;
+}
+.link{
+	padding-top: 20px;
+}
+.link-li1{
+	font-weight: bold;
+	line-height: 32px;
+	font-size: 14px;
+}
+.link-li{
+	line-height: 24px;
+}
+.link-ul{
+	margin-right: 80px;
+	float: left;
+}
+.contact{
+	margin-right: 40px;
+}
+.wechat{
+	padding: 10px 0;
+	text-align: center;
+	margin-right: 34px;	
+}
+
+.wechat p{
+	line-height: 20px;
+	font-weight: bold;
+}
+.contact-p{
+	line-height: 42px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.contact-p span{
+	font-weight: normal;
+	background: url(../img/phone.png) no-repeat left center;
+	padding: 0 24px;
+	margin-left: 14px;
+}
