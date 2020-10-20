@@ -21,12 +21,15 @@ header{
 	border-radius: 0.15rem;
 	height: 0.3rem;
 	flex-grow: 1;
+<<<<<<< HEAD
 	line-height: 0.3rem;
 	padding-left: 0.15rem;
 	color: #959595;
 }
 .search span{
 	margin-right: 0.07rem;
+=======
+>>>>>>> 94fa53784b725e7c753a877aa31d0d4926f331c2
 }
 
 section{
@@ -37,6 +40,7 @@ section{
 	right: 0;
 	background-color: #EFEFF4;
 }
+<<<<<<< HEAD
 .banner img{
 	width: 100%;
 }
@@ -77,6 +81,8 @@ section{
 .mainnav-span{
 	display: block;
 }
+=======
+>>>>>>> 94fa53784b725e7c753a877aa31d0d4926f331c2
 
 footer{
 	height: 0.52rem;
