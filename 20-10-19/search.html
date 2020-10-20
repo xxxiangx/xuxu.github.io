@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="font/iconfont.css">
+		<link rel="stylesheet" href="font_praise/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<style type="text/css">
+			*{
+				box-sizing: border-box;
+			}
+			html,body{
+				height: 100%;
+			}
+			body{
+				display: flex;
+				flex-direction: column;
+				background-color: #F1F1F1;
+			}
+			@media only screen and (min-width: 376px) {
+				html{
+					font-size: 16px;
+				}
+			}
+			@media only screen and (min-width: 321px) and (max-width: 375px) {
+				html{
+					font-size: 14px;
+				}
+			}
+			@media only screen and (max-width: 320px) {
+				html{
+					font-size: 12px;
+				}
+			}
+			header{
+				padding: 1.08rem 0;
+				text-align: center;
+				background-color: #0CC440;
+				color: #fff;
+				font-size: 1.42rem;
+			}
+			footer{
+				height: 3.67rem;
+				display: flex;
+				background-color: #fff;
+				border-top: 1px solid #D6D6D6;
+			}
+			.icon{
+				width: 20%;
+				text-align: center;
+				color: #D6D6D6;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				position: relative;
+				font-size: 1rem;
+			}
+			.circle{
+				width: 4.42rem;
+				height: 4.42rem;
+				border: 1px solid #D6D6D6;
+				border-radius: 50%;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translate(-50%);
+				background-color: #fff;
+				line-height: 4.42rem;
+			}
+			section{
+				flex-grow: 1;
+				display: flex;
+				flex-direction: column;
+				overflow-y: auto;
+			}
+			.search{
+				display: flex;
+				padding: 0.33rem;
+				background-color: #fff;
+				border-bottom: 1px solid #D0D0D0;
+			}
+			.search>:first-child{
+				flex-grow: 1;
+				border: 0;
+				border: 1px solid #B3B3B3;
+				margin-right: 0.33rem;
+			}
+			.search>:last-child{
+				width: 3.75rem;
+				line-height: 1.92rem;
+				background-color: #0CC440;
+				color: #fff;
+				border: 0;
+				border-radius: 0.33rem;
+			}
+			.main{
+				display: flex;
+				flex-direction: column;
+				margin: 0.42rem 0;
+				flex-grow: 1;
+				background-color: #fff;
+			}
+			.intro{
+				display: flex;
+				padding: 0.83rem 0.92rem;
+				background-color: #fff;
+				border-bottom: 1px solid #C3C3C3;
+				justify-content: space-around;
+			}
+			.name{
+				align-self: center;
+				line-height: 2.08rem;
+			}
+			.name h6{
+				font-size: 1.25rem;
+			}
+			.name p{
+				color: #9F9F9F;
+			}
+			.logo{
+				width: 4.08rem;
+				height: 4.08rem;
+				border-radius: 50%;
+				border: 1px solid #C3C3C3;
+				margin-right: 0.83rem;
+			}
+			.logo img{
+				width: 100%;
+			}
+			.focus{
+				width: 3.17rem;
+				height: 1.5rem;
+				border-radius: 0.33rem;
+				background-color: #E5E5E5;
+				text-align: center;
+				color: #fff;
+			}
+			.focus:hover{
+				background-color: #0CC43F;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			发现
+		</header>
+		<section>
+			<div class="search">
+				<input type="search" name="username" id="username" placeholder="请输入昵称" />
+				<input type="button" name="search" id="search" value="搜索" />
+			</div>
+			<div class="main">
+				<div class="intro">
+					<div class="logo"><img src="img/men.png"/></div>
+					<div class="name"><h6>我叫小萌</h6><p>我是小萌我怕谁！哈哈哈哈！</p></div>
+					<div class="focus">关注</div>
+				</div>
+				<div class="intro">
+					<div class="logo"><img src="img/men.png"/></div>
+					<div class="name"><h6>我叫小萌</h6><p>我是小萌我怕谁！哈哈哈哈！</p></div>
+					<div class="focus">关注</div>
+				</div>
+			</div>
+			
+		</section>
+		<footer>
+			<div class="icon">
+				<span class="iconfont icon-shouye"></span>
+				<span>首页</span>
+			</div>
+			<div class="icon">
+				<span class="iconfont icon-magnifier"></span>
+				<span>发现</span>
+			</div>
+			<div class="icon">
+				<div class="circle">
+					<span class="iconfont icon-zhaoxiangji"></span>
+				</div>
+			</div>
+			<div class="icon">
+				<span class="iconfont icon-wode"></span>
+				<span>我的</span>
+			</div>
+			<div class="icon">
+				<span class="iconfont icon-tuichu"></span>
+				<span>退出</span>
+			</div>
+		</footer>
+	</body>
+</html>
