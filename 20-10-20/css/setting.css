@@ -1,0 +1,92 @@
+@charset "utf-8";
+html{
+	font-size: 26.67vw;
+}
+body{
+	font-size: 0.13rem;
+}
+.iconfont{
+	font-size: 0.21rem;
+}
+header{
+	height: 0.45rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #F9F9F9;
+	border-bottom: 1px solid #DBDBDB;
+	text-align: center;
+	line-height: 0.45rem;
+}
+header h1{
+	font-size: 0.19rem;
+}
+header span{
+	position: absolute;
+	left: 0.16rem;
+}
+section{
+	background-color: #EFEFF4;
+	position: fixed;
+	top: 0.45rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+}
+section span{
+	margin-right: 0.15rem;
+}
+.setting,.setting-1,.logout{
+	margin-top: 0.1rem;
+}
+.have-r,.no-r{
+	border-bottom: 1px solid #F0F0F5;
+}
+.have-r{
+	background-color: #fff;
+	display: flex;
+	line-height: 0.45rem;
+}
+.no-r{
+	line-height: 0.45rem;
+	background-color: #fff;
+}
+.setting-p{
+	flex-grow: 1;
+	padding: 0 0.15rem;
+}
+.logout-p{
+	padding: 0 0.15rem;
+	color: #919191;
+	margin-top: 0.11rem;
+}
+.logout{
+	display: flex;
+	background-color: #fff;
+}
+.out-l{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+.logout span{
+	line-height: 0.66rem;
+}
+.status{
+	text-align: center;
+	margin-top: 0.33rem;
+}
+.status-p1{
+	margin-bottom: 0.17rem;
+	font-weight: bold;
+}
+.status-p2{
+	margin-bottom: 0.23rem;
+	font-weight: bold;
+}
+.status-pic{
+	width: 1.5rem;
+}

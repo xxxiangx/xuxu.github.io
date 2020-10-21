@@ -1,0 +1,105 @@
+@charset "utf-8";
+html{
+	font-size: 26.67vw;
+}
+body{
+	font-size: 0.13rem;
+}
+.iconfont{
+	font-size: 0.21rem;
+}
+header{
+	height: 0.45rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #F9F9F9;
+	border-bottom: 1px solid #DBDBDB;
+	text-align: center;
+	line-height: 0.45rem;
+}
+header h1{
+	font-size: 0.19rem;
+}
+header span{
+	position: absolute;
+	left: 0.16rem;
+}
+section{
+	background-color: #F5F5F5;
+	position: fixed;
+	top: 0.45rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+}
+.senior{
+	padding: 0 0.09rem 0 0.14rem;
+	margin-bottom: 0.1rem;
+	background-color: #fff;
+}
+.senior-t{
+	display: flex;
+	align-items: center;
+}
+.doc{
+	flex-grow: 1;
+	display: flex;
+	margin: 0.1rem 0;
+}
+.doc-l{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+.doc-l-t{
+	display: flex;
+
+}
+.doc-l-l{
+	width: 0.55rem;
+	height: 0.55rem;
+}
+.doc-l-r{
+	flex-grow: 1;
+	margin-left: 0.1rem;
+	line-height: 0.23rem;
+}
+.doc-l-r span{
+	color: #FFA35C;	
+}
+.doc-l-r>:first-child{
+	font-size: 0.14rem;
+}
+.doc-l-r>:last-child{
+	font-size: 0.12rem;
+}
+.doc-l-b{
+	color: #71C5D5;
+	line-height: 0.25rem;
+}
+.doc-r{
+	width: 0.9rem;
+	color: #9B9B9B;
+	text-align: center;
+}
+.senior-b{
+	border-top: 2px solid #EEEEEE;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.11rem 0;
+}
+.senior-li{
+	line-height: 0.33rem;
+	text-align: center;
+	border: 2px solid #EB5857;
+	border-radius: 0.04rem;
+	padding: 0 0.23rem;
+	color: #EB5857;
+}
+.senior-li:hover{
+	background-color: #EB5857;
+	color: #fff;
+}

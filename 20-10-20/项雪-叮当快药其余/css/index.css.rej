@@ -1,0 +1,72 @@
+diff a/20-10-20/css/index.css b/20-10-20/css/index.css	(rejected hunks)
+@@ -5,42 +5,57 @@
+ body{
+ 	font-size: 0.13rem;
+ }
++.iconfont{
++	font-size: 0.21rem;
++}
+ header{
+-	height: 0.47rem;
++	height: 0.84rem;
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	right: 0;
+ 	background-color: #E94544;
+-	padding: 0 0.15rem;
++	padding: 0 0.15rem 0.1rem;
+ 	display: flex;
+-	align-items: center;
++	flex-direction: column;
++}
++.place{
++	color: #fff;
++	line-height: 0.44rem;
++	display: flex;
++	flex-grow: 1;
++}
++.place-p{
++	white-space: nowrap;
++	overflow: hidden;
++	text-overflow: ellipsis;
+ }
+ .search{
+ 	background-color: #fff;
+ 	border-radius: 0.15rem;
+-	height: 0.3rem;
+ 	flex-grow: 1;
+-<<<<<<< HEAD
+ 	line-height: 0.3rem;
+-	padding-left: 0.15rem;
++	padding: 0 0.15rem;
+ 	color: #959595;
++	display: flex;
+ }
+-.search span{
+-	margin-right: 0.07rem;
+-=======
+->>>>>>> 94fa53784b725e7c753a877aa31d0d4926f331c2
++.search-p{
++	flex-grow: 1;
++	margin-left: 0.07rem;
++}
++.icon-saomiao{
++	color: #EB5352;
++	font-size: 0.13rem;
+ }
+ 
+ section{
+ 	position: fixed;
+-	top: 0.47rem;
++	top: 0.84rem;
+ 	bottom: 0.52rem;
+ 	left: 0;
+ 	right: 0;
+-	background-color: #EFEFF4;
++	overflow-y: auto;
+ }
+-<<<<<<< HEAD
+ .banner img{
+ 	width: 100%;
+ }

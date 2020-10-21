@@ -1,0 +1,119 @@
+html{
+	font-size: 26.67vw;
+}
+body{
+	font-size: 0.13rem;
+}
+.iconfont{
+	font-size: 0.21rem;
+}
+header{
+	height: 1.24rem;
+	background-color: #D83B3F;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.msg{
+	padding: 0 0.13rem 0 0.15rem;
+	line-height: 0.45rem;
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+}
+.admin{
+	display: flex;
+	padding: 0.12rem 0 0.12rem 0.15rem;
+	align-items: center;
+}
+.logo{
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	margin-right: 0.09rem;
+}
+.login{
+	flex-grow: 1;
+	display: flex;
+	color: #fff;
+}
+.login p{
+	margin-right: 0.24rem;
+	font-size: 0.18rem;
+}
+.guide{
+	background-color: #F95160;
+	color: #fff;
+	line-height: 0.26rem;
+	padding-left: 0.17rem;
+	border-radius: 0.13rem 0 0 0.13rem;
+	font-size: 0.14rem;
+}
+
+section{
+	position: fixed;
+	top: 1.24rem;
+	bottom: 0.52rem;
+	left: 0;
+	right: 0;
+	background-color: #EFEFF4;
+	overflow-y: auto;
+}
+.order{
+	background-color: #fff;
+	margin-bottom: 0.1rem;
+}
+.title{
+	display: flex;
+	justify-content: space-between;
+	padding: 0.15rem 0.1rem;
+	border-bottom: 1px solid #EAEAEA;
+}
+.title-l{
+	border-left: 10px solid #E94544;
+	padding-left: 0.07rem;
+	font-size: 0.15rem;
+}
+.title-p{
+	color: #A3A3A3;
+	font-size: 0.12rem;
+	line-height: 0.15rem;
+}
+.order-nav{
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.order-li{
+	width: 25%;
+	margin: 0.15rem 0;
+}
+.order-li span{
+	display: block;
+	margin-bottom: 0.05rem;
+}
+
+
+footer{
+	height: 0.52rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	border-top: 1px solid #DEDEDE;
+	display: flex;
+	align-items: center;
+}
+.footnav{
+	text-align: center;
+	flex-grow: 1;
+}
+.footnav-span{
+	display: block;
+}
+.footnav:hover{
+	color: #E94544;
+}

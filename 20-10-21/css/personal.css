@@ -1,0 +1,157 @@
+@charset "utf-8";
+html{
+	font-size: 26.67vw;
+}
+body{
+	font-size: 0.12rem;
+	color: #666;
+}
+.iconfont{
+	font-size: 0.24rem;
+}
+header{
+	height: 1.63rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0 0.15rem;
+}
+.head-t{
+	margin: 0.39rem 0 0.13rem;
+	display: flex;
+	align-items: center;
+}
+.logo{
+	border-radius: 50%;
+	width: 0.65rem;
+	height: 0.65rem;
+	margin-right: 0.12rem;
+}
+.head-t-p{
+	flex-grow: 1;
+	color: #151516;
+	font-size: 0.19rem;
+}
+.head-t-p span{
+	font-size: 0.15rem;
+	color: #21B100;
+	margin-left: 0.06rem;
+}
+.share{
+	border: 1px solid #B6B6B6;
+	border-radius: 0.15rem;
+	font-size: 0.15rem;
+	line-height: 0.3rem;
+	padding: 0 .12rem;
+}
+.share span{
+	font-size: 0.15rem;
+	color: #E02E24;
+	margin-right: 0.04rem;
+}
+
+
+
+section{
+	background-color: #F4F4F4;
+	position: fixed; 
+	top: 1.63rem;
+	bottom: 0.5rem;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+}
+.order{
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	margin-bottom: 0.08rem;
+}
+.order-t{
+	display: flex;
+	padding: 0 0.13rem;
+	justify-content: space-between;
+	line-height: 0.5rem;
+}
+.order-l{
+	color: #202021;
+	font-size: 0.17rem;
+}
+.order-r{
+	color: #A6A6A6;
+	font-size: 0.13rem;
+}
+.order-r span{
+	font-size: 0.13rem;
+	
+}
+.ordernav{
+	display: flex;
+	justify-content: space-around;
+}
+.ordernav-li{
+	width: 20%;
+	text-align: center;
+	margin-bottom: 0.19rem;
+}
+.ordernav-li span{
+	display: block;
+	margin-bottom: 0.11rem;
+}
+.mainnav,.mainnav-1{
+	margin-bottom: 0.08rem;
+	display: flex;
+	background-color: #fff;
+	flex-wrap: wrap;
+}
+.mainnav-li,.mainnav-li-1{
+	width: 20%;
+	text-align: center;
+	margin: 0.2rem 0;
+}
+.mainnav-li span{
+	color: #E02E24;
+}
+.mainnav-li-1 span{
+	color: #FF913B;
+}
+.mainnav-li span,.mainnav-li-1 span{
+	display: block;
+	margin-bottom: 0.1rem;
+}
+
+
+footer{
+	height: 0.5rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #EAEAEA;
+}
+.footnav{
+	display: flex;
+	text-align: center;
+	padding-top: 0.05rem;
+}
+.footnav-li{
+	width: 25%;
+	position: relative;
+}
+.footnav-li span{
+	display: block;
+}
+.footnav-li:hover{
+	color: #E02E24;
+}
+.msg{
+	background-color: #E02E24;
+	color: #fff;
+	border-radius: 50%;
+	width: 0.18rem;
+	height: 0.18rem;
+	position: absolute;
+	top: -0.02rem;
+	right: 0.15rem;
+}

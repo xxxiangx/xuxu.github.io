@@ -1,0 +1,76 @@
+@charset "utf-8";
+html{
+	font-size: 26.67vw;
+}
+body{
+	font-size: 0.13rem;
+}
+.iconfont{
+	font-size: 0.21rem;
+}
+header{
+	height: 0.45rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #F9F9F9;
+	border-bottom: 1px solid #DBDBDB;
+	text-align: center;
+	line-height: 0.45rem;
+}
+header h1{
+	font-size: 0.19rem;
+}
+header span{
+	position: absolute;
+	left: 0.16rem;
+}
+section{
+	position: fixed;
+	top: 0.45rem;
+	bottom: 0.5rem;
+	left: 0;
+	right: 0;
+	padding: 0.1rem;
+	overflow-y: auto;
+}
+section h5{
+	line-height: 0.49rem;
+	font-size: 0.2rem;
+}
+.service-t{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.07rem;
+}
+.service-l,.service-r{
+	width: 50%;
+	height: auto;
+}
+.service-l{
+	margin-right: 0.05rem;
+}
+.service-l img{
+	height: 1.82rem;
+}
+
+footer{
+	height: 0.5rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #EEEEEE;
+}
+.f-nav{
+	display: flex;
+	text-align: center;
+}
+.f-nav-li{
+	flex-grow: 1;
+	padding-top: 0.05rem;
+}
+.f-nav-li span{
+	display: block;
+}
