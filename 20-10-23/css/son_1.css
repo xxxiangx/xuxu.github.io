@@ -1,0 +1,103 @@
+@charset "utf-8";
+header{
+	height: 0.44rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0.08rem 0 0.08rem 0.14rem;
+	display: flex;
+}
+.icon-xinxi1,.icon-shangjia1{
+	margin-right: 0.17rem;
+	line-height: 0.28rem;
+	color: #DC394A;
+	font-weight: bold;
+	position: relative;
+}
+.icon-shangjia1{
+	font-size: 0.15rem;
+}
+.icon-xinxi1{
+	font-size: 0.17rem;
+}
+.search{
+	flex-grow: 1;
+	background-color: #F2F3F7;
+	margin-right: 0.13rem;
+	border-radius: 0.03rem;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
+	color: #A9AAAE;
+}
+.search span{
+	font-size: 0.14rem;
+	margin: 0 0.08rem;
+}
+
+
+
+section{
+	position: fixed;
+	top: 0.44rem;
+	bottom: 0.5rem;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+	background-color: #F2F4F8;
+}
+.bannav{
+	display: flex;
+	background-color: #fff;
+	margin-bottom: 0.1rem;
+}
+.banli{
+	flex-grow: 1;
+	text-align: center;
+	line-height: 0.41rem;
+	font-size: 0.12rem;
+}
+.banli span{
+	font-size: 0.16rem;
+	color: #E2455E;
+	margin-right: 0.04rem;
+}
+.mainnav{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #fff;
+	padding-bottom: 0.12rem;
+	margin-bottom: 0.1rem;
+}
+.mainli{
+	width: 25%;
+	text-align: center;
+	margin-top: 0.1rem;
+	font-size: 0.1rem;
+	color: #949494;
+}
+.mainli img{
+	display: block;
+	margin: 0 auto;
+	width: 0.57rem;
+	height: 0.59rem;
+	margin-bottom: 0.05rem;
+}
+.banner_1{
+	margin-bottom: 0.1rem;
+}
+.circle,.circle_t{
+	width: 0.09rem;
+	height: 0.09rem;
+	background-color: #EF3349;
+	border-radius: 50%;
+	position: absolute;
+}
+.circle{
+	top: -0.05rem;
+	right: 0.2rem;
+}
+.circle_t{
+	top: 0.05rem;
+	right: -0.03rem;
+}

@@ -1,0 +1,127 @@
+@charset "utf-8";
+header{
+	height: 0.52rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	padding: 0.12rem 0.12rem 0.12rem 0.13rem;
+	justify-content: space-between;
+	line-height: 0.27rem;
+}
+header span{
+	color: #D93B4A;
+}
+.place{
+	font-size: 0.13rem;
+}
+.place span{
+	font-size: 0.15rem;
+}
+.search{
+	flex-grow: 1;
+	background-color: #F2F3F7;
+	text-align: center;
+	font-size: 0.13rem;
+	line-height: 0.28rem;
+	color: #A1A2A4;
+	margin: 0 0.15rem;
+	border-radius: 0.04rem;
+}
+.search span{
+	font-size: 0.13rem;
+	color: #A1A2A4;
+	margin-right: 0.13rem;
+}
+section{
+	position: fixed;
+	top: 0.52rem;
+	bottom: 0.5rem;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+}
+.banner{
+	padding: 0 0.15rem;
+}
+.se_nav{
+	padding: 0 0.15rem;
+}
+.mainnav{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.21rem 0 0.15rem;
+	border-bottom: 1px solid #E9E9E9;
+}
+.mainli{
+	width: 20%;
+	text-align: center;
+	margin-bottom: 0.13rem;
+}
+.mainli img{
+	display: block;
+	margin: 0 auto;
+	width: 0.35rem;
+	height: 0.35rem;
+}
+.world{
+	padding: 0 0.15rem;
+}
+.world_title{
+	display: flex;
+	justify-content: space-between;
+}
+.title_l{
+	font-size: 0.16rem;
+	color: #000;
+	padding-left: 0.16rem;
+	border-left: 0.03rem solid #F8313F;
+	margin: 0.15rem 0 0.15rem -0.15rem;
+}
+.title_r{
+	margin: 0.16rem 0;
+	color: #979797;
+}
+
+.world_pics{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.05rem;
+}
+.world_pic{
+	width: 1.12rem;
+	height: 1rem;
+	width: 33%;
+	margin-right: 0.05rem;
+}
+.world_pics>:last-child{
+	margin: 0;
+}
+.world_nav{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #E4E4E4;
+}
+.world_li{
+	width: 25%;
+	margin-right: 0.05rem;
+	line-height: 0.32rem;
+	text-align: center;
+	color: #6C6E63;
+	background-color: #F2F6DD;
+	border-radius: 0.03rem;
+	margin-bottom: 0.15rem;
+}
+.world_nav>:last-child{
+	margin-right: 0;
+	background-color: #E4F8F9;
+}
+
+.world_nav>:nth-child(2){
+	background-color: #EAFCF0;
+}
+.world_nav>:nth-child(3){
+	background-color: #FAF1E2;
+}
+

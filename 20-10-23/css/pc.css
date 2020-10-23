@@ -1,0 +1,383 @@
+@charset "utf-8";
+body{
+	min-width: 1150px;
+}
+.logo{
+	display: block;
+	width: 400px;
+	height: 82px;
+	background: url(../img/cf_02.png) no-repeat center center;
+	text-indent: -9999px;
+}
+.nav-li{
+	float: left;
+	margin-left: 60px;
+	line-height: 82px;
+	font-size: 14px;
+}
+/*广告*/
+.banner{
+	overflow: hidden;
+}
+.wrap{
+	height: 480px;
+	position: relative;
+}
+.banner-pic{
+	position: absolute;
+	left: 50%;
+	margin-left: -720px;
+}
+/*业务部分*/
+.business{
+	padding: 30px 0 78px;
+	text-align: center;
+}
+.busi_title{
+	background: url(../img/cf_08.png) no-repeat center center;
+	width: 262px;
+	height: 74px;
+	margin: 0 auto;
+}
+.busi_para,.cli_para,.works_para,.news_para{
+	line-height: 26px;
+	font-size: 20px;
+	color: #6E6E6D;
+	padding: 22px 0 44px;
+}
+.busili{
+	float: left;
+	margin:  20px 44px 0 0;
+	width: 352px;
+	height: 218px;
+	position: relative;
+}
+.busimask{
+	position: absolute;
+	width: 352px;
+	height: 0;
+	background-color: #0F8BCB;
+	color: #fff;
+	font-size: 16px;
+	transition: all .4s;
+}
+.busili:hover .busimask{
+	height: 218px;
+}
+.mask_para{
+	width: 300px;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	text-align: center;
+	opacity: 0;
+	transition: all .2s;
+}
+.busili:hover .mask_para{
+	top: 60px;
+	opacity: 1;
+}
+.mask_more{
+	position: absolute;
+	top: 0;
+	left: 140px;
+	opacity: 0;
+	transition: all .2s;
+}
+.busili:hover .mask_more{
+	top: 160px;
+	opacity: 1;
+}
+.busi_info{
+	position: absolute;
+	top: 74px;
+	left: 73px;
+	width: 230px;
+	height: 70px;
+	line-height: 70px;
+	background-color: #0F8BCB;
+	font-size: 22px;
+	color: #fff;
+	opacity: .9;
+	transition: all .2s;
+}
+.businav>:nth-child(2) .busi_info{
+	background-color: #196AE0;
+}
+.businav>:nth-child(2) .busimask{
+	background-color: #196AE0;
+}
+.businav>:nth-child(3) .busi_info{
+	background-color: #F7CB16;
+}
+.businav>:nth-child(3) .busimask{
+	background-color: #F7CB16;
+}
+.businav>:nth-child(4) .busi_info{
+	background-color: #99C733;
+}
+.businav>:nth-child(4) .busimask{
+	background-color: #99C733;
+}
+.businav>:nth-child(5) .busi_info{
+	background-color: #D50678;
+}
+.businav>:nth-child(5) .busimask{
+	background-color: #D50678;
+}
+.businav>:nth-child(6) .busi_info{
+	background-color: #F42829;
+}
+.businav>:nth-child(6) .busimask{
+	background-color: #F42829;
+}
+.busili:hover .busi_info{
+	opacity: 0;
+}
+.businav>:nth-child(3),.businav>:nth-child(6){
+	margin-right: 0;
+}
+/*客户部分*/
+.clients{
+	background-color: #EBEFF2;
+	padding: 32px 0 72px;
+	text-align: center;
+}
+.cli_title{
+	width: 208px;
+	height: 74px;
+	background: url(../img/cf_12.png) no-repeat center center;
+	margin: 0 auto;
+}
+.clili{
+	float: left;
+	width: 283px;
+	height: 166px;
+	margin: 2px;
+	position: relative;
+}
+.clilihid{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all .4s;
+}
+.clili:hover .clilihid{
+	opacity: 1;
+}
+/*作品部分*/
+.works{
+	padding: 42px 0 74px;
+	text-align: center;
+}
+.works_title{
+	width: 201px;
+	height: 63px;
+	margin: 0 auto;
+	background: url(../img/cf_45.png) no-repeat center center;
+}
+.worksli{
+	float: left;
+	width: 283px;
+	height: 211px;
+	margin: 2px;
+	position: relative;
+}
+.worksmask{
+	position: absolute;
+	width: 283px;
+	height: 211px;
+	background-color: #008CDF;
+	opacity: 0;
+	transition: all .4s;
+}
+.worksmask:hover{
+	opacity: .9;
+}
+.move{
+	position: absolute;
+	width: 283px;
+	height: 211px;
+}
+.move1{
+	position: absolute;
+	top: 60px;
+	left: 195px;
+	opacity: 0;
+	transition: all .4s;
+}
+.move:hover .move1{
+	left: 130px;
+	opacity: 1;
+}
+.move2{
+	position: absolute;
+	top: 40px;
+	left: 55px;
+	opacity: 0;
+	transition: all .4s;
+}
+.move:hover .move2{
+	left: 110px;
+	opacity: 1;
+}
+.move3{
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	top: 130px;
+	left: 115px;
+	opacity: 0;
+	transition: all .4s;
+}
+.move:hover .move3{
+	opacity: 1;
+}
+/*新闻部分*/
+.news{
+	background: url(../img/news_bg.jpg);
+	padding: 40px 0 70px;
+}
+.news_title{
+	width: 201px;
+	height: 65px;
+	background: url(../img/cf_70.png) no-repeat center center;
+	margin: 0 auto;
+}
+.news_para{
+	color: #F6FAFC;
+	text-align: center;
+}
+.newsli{
+	width: 550px;
+	height: 168px;
+	margin: 14px 40px 0 0;
+}
+.news_info{
+	width: 330px;
+	background-color: #fff;
+	padding: 20px 30px 20px 20px;
+}
+.info_title{
+	font-size: 18px;
+	padding-bottom: 10px;
+	width: 300px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.info_title:hover{
+	color: #317AB4;
+}
+.info_para{
+	line-height: 22px;
+	font-size: 14px;
+	padding-bottom: 10px;
+	color: #7E8181;
+}
+.info_time{
+	color: #D2D3DC;
+}
+.newsnav>:nth-child(2),.newsnav>:nth-child(4),.newsnav>:nth-child(6){
+	margin-right: 0;
+}
+/*联系方式部分*/
+.contact{
+	background-color: #2E2E2E;
+	padding: 22px 0 32px;
+	color: #FBFCFD;
+	font-size: 14px;
+}
+.con_title{
+	background: url(../img/cf_89.png) no-repeat center center;
+	width: 262px;
+	height: 73px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.infor{
+	width: 570px;
+	border-right: 1px solid #4D4D4D;
+}
+.infor_title{
+	font-size: 24px;
+	padding-bottom: 24px;
+}
+.infor_phone,.infor_email,.infor_index,.infor_add{
+	padding-left: 34px;
+	margin-bottom: 14px;
+}
+.infor_phone{
+	background: url(../img/cf_93.png) no-repeat left center;
+}
+.infor_email{
+	background: url(../img/cf_96.png) no-repeat left center;
+}
+.infor_index{
+	background: url(../img/cf_98.png) no-repeat left center;
+}
+.infor_add{
+	background: url(../img/cf_100.png) no-repeat left center;
+}
+.serv{
+	margin: 20px 0 40px;
+}
+.box{
+	width: 180px;
+	height: 36px;
+	background-color: #414141;
+	border-radius: 4px;
+	margin-right: 18px;
+	padding: 12px;
+}
+.box_pic{
+	margin-right: 16px;
+}
+.box_title{
+	font-size: 18px;
+}
+.box_para{
+	font-size: 12px;
+}
+.code_para{
+	margin-left: 14px;
+	font-size: 20px;
+}
+.online{
+	width: 530px;
+	padding-left: 48px;
+}
+.online_title{
+	font-size: 24px;
+	margin-bottom: 26px;
+}
+.online_td input,.online_table select{
+	width: 270px;
+	height: 24px;
+	background-color: #828282;
+	outline: none;
+	margin-bottom: 10px;
+	color: #FBFCFD;
+}
+.online_td_last{
+	background-color: #828282;
+	width: 460px;
+	height: 130px;
+	resize: none;
+	outline: none;
+	margin-bottom: 20px;
+}
+.online_btn{
+	line-height: 28px;
+	padding: 0 20px;
+	background-color: #828282;
+	border-radius: 6px;
+}
+/*底部*/
+.footer{
+	background-color: #191919;
+	color: #727272;
+	text-align: center;
+	line-height: 38px;
+}

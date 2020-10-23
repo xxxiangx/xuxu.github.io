@@ -1,0 +1,157 @@
+@charset "utf-8";
+header{
+	height: 0.44rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-left: 0.15rem;
+	line-height: 0.44rem;
+	display: flex;
+	color: #D83A51;
+}
+header span{
+	margin-right: 0.15rem;
+}
+.icon-xinxi1{
+	position: relative;
+}
+.icon-fangdajing{
+	flex-grow: 1;
+}
+.topnav{
+	flex-grow: 1;
+	display: flex;
+}
+.topli{
+	width: 0.37rem;
+	color: #353535;
+	text-align: center;
+}
+.topli:hover{
+	color: #D83A51;
+	border-bottom: 2px solid #D83A51;
+}
+
+section{
+	position: fixed;
+	top: 0.44rem;
+	bottom: 0.5rem;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+	background-color: #F2F3F7;
+}
+.banpics{
+	display: flex;
+	padding: 0.04rem 0.16rem;
+	background-color: #fff;
+}
+.banbig{
+	flex-grow: 2;
+}
+.box{
+	flex-grow: 1;
+	margin-left: 0.04rem;
+}
+.box>:first-child{
+	margin-bottom: 0.04rem;
+}
+.mainnav{
+	padding: 0 0.15rem;
+	position: relative;
+	background-color: #fff;
+	margin-bottom: 0.1rem;
+}
+.main_title{
+	display: flex;
+	justify-content: space-between;
+}
+.title_l{
+	font-size: 0.16rem;
+	color: #000;
+	padding-left: 0.16rem;
+	border-left: 0.03rem solid #F8313F;
+	margin: 0.15rem 0 0.15rem -0.15rem;
+}
+.title_r{
+	margin: 0.16rem 0;
+	color: #979797;
+}
+.main_nav{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+
+}
+.main_li{
+	width: 25%;
+	text-align: center;
+	margin-bottom: 0.18rem;
+}
+.main_li img{
+	width: 0.64rem;
+}
+.main_info{
+	font-size: 0.14rem;
+	color: #2F2F2F;
+	margin: 0.06rem 0;
+}
+.main_num{
+	color: #E73C4D;
+	font-weight: bold;
+}
+.hot{
+	display: flex;
+	justify-content: space-between;
+}
+.name{
+	color: #6C6C6C;
+	margin-bottom: 0.14rem;
+}
+.name img{
+	width: 0.2rem;
+	margin-right: 0.06rem;
+}
+.sign{
+	position: absolute;
+	top: 0.24rem;
+	right: 0.11rem;
+}
+.sign img{
+	width: 0.62rem;
+}
+.hot{
+	display: flex;
+	flex-direction: column;
+}
+.hot_title{
+	font-size: 0.15rem;
+	font-weight: bold;
+	display: flex;
+}
+.hot_title span{
+	display: block;
+	background-color: #F491CF;
+	color: #fff;
+	font-size: 0.13rem;
+	padding: 0 0.04rem;
+	border-radius: 0.04rem;
+}
+.circle{
+	width: 0.09rem;
+	height: 0.09rem;
+	background-color: #EF3349;
+	border-radius: 50%;
+	position: absolute;
+	top: -0.05rem;
+	right: 0.2rem;
+}
+.circle{
+	width: 0.09rem;
+	height: 0.09rem;
+	background-color: #EF3349;
+	top: -0.05rem;
+	right: 0.2rem;
+}
