@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .baidu {
+            width: 560px;
+            height: 305px;
+            border: 1px solid red;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        #pics {
+            width: 560px;
+        }
+        
+        #left,
+        #right {
+            color: red;
+            font-size: 100px;
+            text-decoration: none;
+            position: absolute;
+            top: 50%;
+            margin: -50px;
+        }
+        
+        #left {
+            left: 30px;
+        }
+        
+        #right {
+            right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="baidu">
+        <img src="img/1.jpeg" alt="" id="pics">
+        <a href="javascript:;" id="left">&lt;</a>
+        <a href="javascript:;" id="right">&gt;</a>
+    </div>
+</body>
+
+</html>
+<script>
+    //1.案例：输入年份，计算某一年是否是闰年（闰年能被4整除且不能被100整除，或能被400整除）；
+    // var year = prompt('请输入年份'); //设置输入框
+    // if (year % 4 == 0 && year % 100 !== 0 || year % 400 == 0) { //根据题目条件设置if条件
+    //     console.log('闰年');
+    // } else {
+    //     console.log('平年');
+    // }
+
+    //2.案例：输入分数，判定成绩等级（5个等级0-100）
+    // (if写法)
+    // var score = prompt('请输入分数'); //设置输入框
+    // if (score <= 100 && score >= 0) { //设定条件分数在0-100之间
+    //     if (score == 100) { //若分数为100,等级为A
+    //         console.log('A');
+    //     } else if (score < 100 && score >= 90) { //若分数在90-100之间,等级为B
+    //         console.log('B');
+    //     } else if (score < 90 && score >= 80) { //若分数在80-90之间,等级为C
+    //         console.log('C');
+    //     } else if (score < 80 && score >= 60) { //若分数在60-80之间,等级为D
+    //         console.log('D');
+    //     } else if (score < 60) { //若分数在60以下,等级为F
+    //         console.log('F');
+    //     }
+    // } else {
+    //     console.log('输入的分数超出范围或不是分数'); //输入内容不在条件范围内
+    // }
+
+    // (switch写法)
+    // var score = prompt('请输入分数'); //设置输入框
+    // switch (true) { //括号中内容与case的值的内容恒等
+    //     case score == 100:
+    //         console.log('A'); //设置等级
+    //         break;
+    //     case score >= 90 && score < 100:
+    //         console.log('B'); //设置等级
+    //         break;
+    //     case score >= 80 && score < 90:
+    //         console.log('C'); //设置等级
+    //         break;
+    //     case score >= 60 && score < 80:
+    //         console.log('D'); //设置等级
+    //         break;
+    //     case score < 60:
+    //         console.log('F'); //设置等级
+    //         break;
+    //     default:
+    //         console.log('输入有误');
+    // }
+
+    // 3.大家都知道，男大当婚，女大当嫁。那么女方家长要嫁女儿，当然要提出一定的条件：
+    // 高：180cm以上; 富:1000万以上; 帅:500以上;
+    // 如果这三个条件同时满足，则:‘我一定要嫁给他’
+    // 如果三个条件有为真的情况，则:‘嫁吧，比上不足，比下有余。’
+    // 如果三个条件都不满足，则:‘不嫁！’
+    // var height = prompt('请输入身高cm：'),
+    //     money = prompt('请输入身价万：'),
+    //     handsome = prompt('请输入颜值100-1000：'); //多个变量用逗号隔开
+    // if (height > 180 && money > 1000 && handsome > 500) { //若三个条件都满足
+    //     console.log('我一定要嫁给他');
+    // } else if (height > 180 || money > 1000 || handsome > 500) { //若三个条件有一个满足
+    //     console.log('嫁吧，比上不足，比下有余。');
+    // } else { //若都不满足
+    //     console.log('886');
+    // }
+
+    // 4.开发一款软件，根据公式（身高-108）*2=体重，可以有10斤左右的浮动。来观察测试者体重是否合适(身高：cm)
+    // var height = prompt('请输入身高(cm):');
+    // var weight = prompt('请输入体重(斤):');
+
+    // var max = (height - 108) * 2 + 10; //偏胖体重 重10斤以上
+    // var min = (height - 108) * 2 - 10; //偏瘦体重 轻10斤以上
+
+    // if (weight > max) { //若体重偏重10斤以上则输出偏胖
+    //     console.log('偏胖');
+    // } else if (weight <= max && weight >= min) { //若体重在10斤浮动内则输出标准
+    //     console.log('标准');
+    // } else if (weight < min) { //若体重偏轻10斤以上则输出偏瘦
+    //     console.log('偏瘦');
+    // } else {
+    //     console.log('输入有误');
+    // }
+
+    // 5.东方航空从北京飞往马尔代夫的机票原价为4000元，4到10月份为旺季， 其他月份为淡季，旺季时候头等舱打9折，经济舱打7.5折；淡季头等舱打6折， 经济舱打3折。从页面输入出行的月份和选择的舱型计算出机票价格
+
+    // var month = prompt('请输入月份:'); //根据月份进行分支
+    // var choice = confirm('请选择舱型'); //选择舱型
+    // var price = 4000; //机票原价
+    // var peakFirst = parseFloat(price * 0.9); //旺季头等舱价格
+    // var peakEconomy = parseFloat(price * 0.75); //旺季经济舱价格
+    // var offFirst = parseFloat(price * 0.6); //淡季头等舱价格
+    // var offEconomy = parseFloat(price * 0.3); //淡季经济舱价格
+    // switch (+month) {
+    //     case 4:
+    //     case 5:
+    //     case 6:
+    //     case 7:
+    //     case 8:
+    //     case 9:
+    //     case 10:
+    //         if (choice == true) {
+    //             console.log(month + '月头等舱价格为：' + peakFirstF);
+    //         } else {
+    //             console.log(month + '月经济舱价格为：' + peakEconomy);
+    //         }
+    //         break;
+    //     case 1:
+    //     case 2:
+    //     case 3:
+    //     case 11:
+    //     case 12:
+    //         if (choice == true) {
+    //             console.log(month + '月头等舱价格为：' + offFirst);
+    //         } else {
+    //             console.log(month + '月经济舱价格为：' + offEconomy);
+    //         }
+    //         break;
+    //     default:
+    //         console.log('输入有误');
+    // }
+
+    // 输入月份，显示当月的天数。 
+    // var year = prompt('请输入年份');
+    // var month = prompt('请输入月份');
+    // switch (+month) {
+    //     case 1:
+    //     case 3:
+    //     case 5:
+    //     case 7:
+    //     case 8:
+    //     case 10:
+    //     case 12:
+    //         console.log(year + '年' + month + '月有31天');
+    //         break;
+    //     case 4:
+    //     case 6:
+    //     case 9:
+    //     case 11:
+    //         console.log(year + '年' + month + '月有30天');
+    //         break;
+    //     case 2:
+    //         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+    //             console.log(year + '年' + month + '月有29天');
+    //         } else {
+    //             console.log(year + '年' + month + '月有28天');
+    //         }
+    //         break;
+    //     default:
+    //         console.log('输入有误');
+    // }
+
+    // 扩展案例：百度轮播图的简单实现。
+</script>
