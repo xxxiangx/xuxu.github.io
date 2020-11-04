@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box"></div>
+</body>
+
+</html>
+<script>
+    //带参数的普通函数 - 直接调用
+    // function fn1(a, b) {
+    //     return a + b;
+    // }
+    // document.write(fn1(12, 114) + '<br>');
+
+    //带参数的函数表达式 - 直接调用
+    // var fn2 = function(c, d) {
+    //     return c - d;
+    // }
+    // document.write(fn2(51, 235) + '<br>');
+
+    //带参数的自执行函数 - 直接输出整个函数。
+    // (function(e, f) {
+    //     return e * f;
+    // })(document.write(12, 45 + '<br>'));
+
+    //带参数的事件处理函数 - 函数外面再套一层函数
+    // function fn4(w, z) {
+    //     return w / z;
+    // }
+    // document.onclick = function() {
+    //     console.log((fn4(81, 9)));
+    // }
+
+
+    // 编写一个函数，计算两个数字的和、差、积、商（要求：使用传参的形式）.
+    // var choice = function(a, b, calc) {
+    //     switch (calc) {
+    //         case '+':
+    //             return a + b;
+    //         case '-':
+    //             return a - b;
+    //         case '*':
+    //             return a * b;
+    //         case '/':
+    //             return a / b;
+    //     }
+    // };
+    // document.write(choice(215, 6236, '+') + '<br>');
+    // document.write(choice(215, 6236, '-') + '<br>');
+    // document.write(choice(215, 6236, '*') + '<br>');
+    // document.write(choice(215, 6236, '/') + '<br>');
+
+    // 编写一个函数，计算三个数字的大小，按从小到大顺序输出。
+    // document.write((function(a, b, c) {
+    //     if (a > b) {
+    //         var temp = a;
+    //         var a = b;
+    //         var b = temp;
+    //     };
+    //     if (a > c) {
+    //         var temp = a;
+    //         var a = c;
+    //         var c = temp;
+    //     };
+    //     if (b > c) {
+    //         var temp = b;
+    //         var b = c;
+    //         var c = temp;
+    //     };
+    //     return a + ',' + b + ',' + c;
+
+    // })(23, 6, 116));
+
+
+    // 编写生成4位数字验证码的函数，并生成10次.
+    // var numcode = function() {
+    //     var str = '';
+    //     for (var num = 1; num <= 4; num++) {
+    //         str += parseInt(Math.random() * 10);
+    //     }
+    //     return str;
+    // };
+    // numcode();
+
+    // for (var i = 1; i <= 10; i++) {
+    //     document.write(numcode() + '<br>');
+    // }
+    // document.write(numcode());
+
+
+
+    // box.innerHTML = numcode();
+    // box.onclick = function() {
+    //     box.innerHTML = numcode();
+    // };
+
+    // var i = 0;
+    // var sum = 0;
+    // do {
+    //     i++;
+    //     if (i % 2 === 0) {
+    //         continue;
+    //     }
+    //     if (i % 5 === 0) {
+    //         break;
+    //     }
+    //     sum += i; //1+3
+    // } while (i < 10);
+    // console.log('sum=' + sum);
+
+    // var sum = 10;
+    // for (var i = 2; i < 10; i++) {
+    //     sum = sum * 0.05 + sum;
+    // }
+    // alert(parseInt(sum));
+    var sum = 0;
+    for (var i = 0; i < 10; i++) {
+        sum += i;
+    }
+    console.log(i);
+</script>

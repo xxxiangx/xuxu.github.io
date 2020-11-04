@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    // var arr1 = new Array('apple', 1, true, function() {
+    //     alert('函数');
+    // });
+    // console.log(arr1); // 输出数组
+    // console.log(arr1[1]); // 下标
+    // console.log(arr1.length); // 长度
+    // // console.log(arr1[3]()); //调用函数
+    // console.log('-----------------------------------------------');
+    // arr1[4] = '增加一个项';
+    // console.log(arr1); // 输出数组
+    // console.log(arr1.length); // 长度
+    // console.log('-----------------------------------------------');
+    // // arr1.length = 0;
+    // // console.log(arr1); // 输出数组
+    // // console.log(arr1.length); // 长度
+    // arr1 = [];
+    // console.log(arr1); // 输出数组
+    // console.log(arr1.length); // 长度
+
+    // var arr2 = ['apple', 'watermelon', 'peach', 'banana', 'orange'];
+    // for (var i = 0; i < arr2.length; i++) {
+    //     console.log(arr2[i]);
+    // }
+
+    // var a = new Array('是数组嘛');
+    // var b = '是数组嘛';
+    // var c = null;
+    // console.log(typeof a); //object
+    // console.log(typeof b); //string
+    // console.log(typeof c); //object
+    // console.log(Array.isArray(a)); //true
+    // console.log(Array.isArray(b)); //false
+    // console.log(Array.isArray(c)); //false
+
+    // push() :将数组项添加到最后一项 接收参数
+    // pop() :删除最后一项
+    // unshift() :添加到前面 接收参数
+    // shift() :删除前面一项
+    // reverse() :反转
+    // sort() :升序排序 比较函数
+    // concat() :基于当前数组创建一组数组(拷贝) 有参数
+
+    // var arr3 = new Array(1, 2, 3, 4, 5);
+    // arr3.push(7, 8, 9);
+    // console.log(arr3);
+    // arr3.pop();
+    // arr3.pop();
+    // arr3.pop();
+    // console.log(arr3);
+    // arr3.unshift(0);
+    // console.log(arr3);
+
+    //slice() :截取
+    //splice() :删除、插入、替换
+    //join() :拼接
+
+    // var arr4 = new Array(1, 2, 3, 4, 5);
+
+    // console.log(arr4.slice(1, 1)); // []
+    // console.log(arr4.slice(1, 2)); // [2]
+    // console.log(arr4.slice(1, 3)); // [2,3]
+
+    // console.log(arr4.splice(2, 3)); //[3, 4, 5] 删除
+    // console.log(arr4);
+    // console.log(arr4.splice(2, 0, 7, 8, 9)); // [] 没有删除 , 插入
+    // console.log(arr4); //[1, 2, 7, 8, 9, 3, 4, 5]
+    // console.log(arr4.splice(2, 2, 'apple', 'peach'));
+    // console.log(arr4);
+    // console.log(arr4.join('')); //经典用法
+
+    //1.编写函数norepeat(arr) 将数组的重复元素去掉
+    // var arr1 = [3, 3, 5, 6, 5, 8, 3, 9];
+    // function norepeat() {
+    //     for (var i = 0; i < arr1.length; i++) {
+    //         for (var j = i + 1; j < arr1.length; j++) {
+    //             if (arr1[i] === arr1[j]) {
+    //                 arr1.splice(j, 1);
+    //                 j--;
+    //             }
+    //         }
+    //     }
+    //     return arr1;
+    // }
+    // console.log(norepeat());
+    //2.标记法：筛选需要的。
+
+
+    // 3.有一个从小到大排好序的数组。现输入一个数，要求按原来的规律将它插入数组中。
+    // function sortnum(num) {
+    //     var arr2 = [14, 651, 351, 65, 2];
+    //     arr2.push(num);
+    //     arr2.sort(function(a, b) {
+    //         return a - b
+    //     });
+    //     return arr2;
+    // }
+    // sortnum();
+    // console.log(sortnum(1434));
+
+    // var stu = new Object();
+    // stu.age = 12;
+    // stu.name = 'zhangsan';
+    // console.log(stu);
+    // var stu1 = {
+    //     age: 16,
+    //     name: 'lisi'
+    // }
+    // console.log(stu1);
+    // console.log(stu1.age);
+    // stu1.name = "wangwu";
+    // stu1.age = 21;
+    // console.log(stu1.name);
+    // console.log(stu1.age);
+    // alert(stu1);
+
+    //for..in..循环
+
+    // 随便排序
+    // var arr = [213, 14, -153, 165, 1, 62, 0, 25, 72, 2];
+
+
+
+    // 冒泡排序
+    // 比较相邻的元素。如果第一个比第二个大，就交换他们两个。
+    // 对每一对相邻元素做同样的工作,从开始第一对到结尾的最后一对,在这一点，最后的元素应该会是最大的数。
+    // 针对所有的元素重复以上的步骤，除了最后一个。
+    // 持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。
+    // var arr = [213, 14, -153, 165, 1, 62, 0, 25, 72, 2];
+    // for (var i = 0; i < arr.length - 1; i++) { //轮数
+    //     for (var j = 0; j < arr.length - i; j++) { //每一轮中的比较
+    //         if (arr[j] > arr[j + 1]) {
+    //             var temp = arr[j];
+    //             arr[j] = arr[j + 1];
+    //             arr[j + 1] = temp;
+    //         }
+    //     }
+    // }
+    // console.log(arr);
+
+
+    // 选择排序
+    // 第一次从待排序的数据元素中选出最小（或最大）的一个元素，存放在序列的起始位置，然后再从剩余的未排序元素中寻找到最小（ 大） 元素， 然后放到已排序的序列的末尾。 以此类推直到全部待排序的数据元素的个数为零。 选择排序是不稳定的排序方法。
+    // var arr = [213, 14, -153, 165, 1, 62, 0, 25, 72, 2];
+    // for (var i = 0; i < arr.length; i++) {
+    //     var minindex = i; //设置假设最小值的索引
+    //     for (var j = i + 1; j < arr.length; j++) {
+    //         if (arr[minindex] > arr[j]) {
+    //             minindex = j; //真正最小值的索引
+    //         }
+    //     }
+    //     if (i !== minindex) {
+    //         var temp = arr[i];
+    //         arr[i] = arr[minindex];
+    //         arr[minindex] = temp;
+    //     }
+    // }
+    // console.log(arr);
+
+    //一.编写函数norepeat(arr) 将数组的重复元素去掉，并返回新的数组。
+    //1.标记法 - for循环的嵌套
+    // var arr = [3, 3, 5, 6, 5, 8, 3, 9, 6, 3, 9];
+    // var newarr = [];
+    // for (var i = 0; i < arr.length; i++) {
+    //     var flag = 1;
+    //     for (var j = 0; j < newarr.length; j++) {
+    //         if (arr[i] === newarr[j]) {
+    //             flag = 2;
+    //         }
+    //     }
+    //     if (flag === 1) {
+    //         newarr.push(arr[i]);
+    //     }
+    // }
+    // console.log(newarr);
+
+    // 2.splice - for循环的嵌套
+    // var arr = [3, 3, 3, 5, 6, 5, 5, 5, 8, 3, 9, 6, 3, 9];
+    // for (var i = 0; i < arr.length; i++) {
+    //     for (var j = i + 1; j < arr.length; j++) {
+    //         if (arr[i] === arr[j]) {
+    //             arr.splice(j, 1);
+    //             j--;
+    //         }
+    //     }
+    // }
+    // console.log(arr);
+
+    // 去重+排序
+    // var arr = [3, 3, 3, 5, 6, 5, 5, 5, 8, 3, 9, 6, 3, 9];
+    // var newarr = [];
+    // arr.sort(function(a, b) {
+    //     return a - b
+    // });
+    // newarr = [arr[0]]; //3
+    // for (var i = 1; i < arr.length; i++) { // 当前项与前一项比较
+    //     if (arr[i] !== arr[i - 1]) {
+    //         newarr.push(arr[i]);
+    //     }
+    // }
+    // console.log(newarr);
+
+    // 去重+对象
+    // var arr = [3, 3, 3, 5, 6, 5, 5, 5, 8, 3, 9, 6, 3, 9];
+    // var obj = {};
+    // var newarr = [];
+    // for (var i = 0; i < arr.length; i++) {
+    //     if (!obj[arr[i]]) {
+    //         obj[arr[i]] = 99;
+    //         newarr.push(arr[i]);
+    //     }
+    // }
+    // console.log(newarr);
+
+    //3.编写函数has(arr , 60) 判断数组中是否存在60这个元素，返回布尔类型
+    // var arr = [3, 3, 3, 5, 6, 5, 5, 5];
+
+    // function has(arr, num) {
+    //     if (Array.isArray(arr)) {
+    //         for (var i = 0; i < arr.length; i++) {
+    //             if (arr[i] === num) {
+    //                 return true;
+    //             }
+    //         }
+    //         return false;
+    //     } else {
+    //         alert('输入的值不是数组');
+    //     }
+    // }
+    // console.log(has(arr, 5));
+
+    //4.有一个从小到大排好序的数组。现输入一个数，要求按原来的规律将它插入数组中。
+    // var arr = [1, 5, 7, 8, 9];
+
+    // function sortnum(arr, num) {
+    //     if (Array.isArray(arr)) {
+    //         for (var i = 0; i < arr.length; i++) {
+    //             if (arr[i] > num) {
+    //                 break;
+    //             }
+    //         }
+    //         for (var j = arr.length - 1; j >= i; j--) { // [ ,9]
+    //             arr[j + 1] = arr[j];
+    //         }
+    //         arr[i] = num;
+    //         return arr;
+    //     } else {
+    //         alert('输入的值不是数组');
+    //     }
+    // }
+    // console.log(sortnum(arr, 6));
+
+    // 5.定义一个含有30个整数的数组，按顺序分别赋予从2开始的偶数；然后按顺序每五个数求出一个平均值，放在另一个数组中并输出。试编程。
+    // var arr = [];
+    // var newarr = [];
+    // for (var i = 1; i <= 30; i++) {
+    //     arr.push(i * 2);
+    // }
+    // for (var j = 0, sum = 0; j < arr.length; j++) {
+    //     sum += arr[j];
+    //     if ((j + 1) % 5 === 0) {
+    //         newarr.push(sum / 5);
+    //         sum = 0;
+    //     }
+    // }
+    // console.log(newarr);
+</script>
